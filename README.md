@@ -1,6 +1,6 @@
 # UIC RoboMaster Embedded
 
-![arm](https://github.com/UIC-RoboMaster/UICRM-Embedded/workflows/arm%20build/badge.svg)
+![arm](img/badge.svg)
 
 Embedded system development @ BNU-HKBU UIC RoboMaster
 
