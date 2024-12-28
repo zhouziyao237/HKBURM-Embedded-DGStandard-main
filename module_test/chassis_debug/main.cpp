@@ -37,11 +37,11 @@ remote::DBUS* dbus = nullptr;
 void RM_RTOS_Init() {
     HAL_Delay(200);
     print_use_uart(&huart8);
-    can = new bsp::CAN(&hcan1, true);
+    can = new bsp::CAN(&hcan2, true);
     fl_motor = new driver::Motor3508(can, 0x202);
     fr_motor = new driver::Motor3508(can, 0x201);
-    bl_motor = new driver::Motor3508(can, 0x203);
-    br_motor = new driver::Motor3508(can, 0x204);
+    bl_motor = new driver::Motor3508(can, 0x204);
+    br_motor = new driver::Motor3508(can, 0x203);
 
     control::ConstrainedPID::PID_Init_t omega_pid_init = {
         .kp = 2500,
@@ -62,19 +62,19 @@ void RM_RTOS_Init() {
 
     fl_motor->ReInitPID(omega_pid_init, driver::MotorCANBase::OMEGA);
     fl_motor->SetMode(driver::MotorCANBase::OMEGA);
-    fl_motor->SetTransmissionRatio(19);
+    fl_motor->SetTransmissionRatio(2);
 
     fr_motor->ReInitPID(omega_pid_init, driver::MotorCANBase::OMEGA);
     fr_motor->SetMode(driver::MotorCANBase::OMEGA);
-    fr_motor->SetTransmissionRatio(19);
+    fr_motor->SetTransmissionRatio(2);
 
     bl_motor->ReInitPID(omega_pid_init, driver::MotorCANBase::OMEGA);
     bl_motor->SetMode(driver::MotorCANBase::OMEGA);
-    bl_motor->SetTransmissionRatio(19);
+    bl_motor->SetTransmissionRatio(2);
 
     br_motor->ReInitPID(omega_pid_init, driver::MotorCANBase::OMEGA);
     br_motor->SetMode(driver::MotorCANBase::OMEGA);
-    br_motor->SetTransmissionRatio(19);
+    br_motor->SetTransmissionRatio(2);
 
     driver::MotorCANBase* motors[control::FourWheel::motor_num];
     motors[control::FourWheel::front_left] = fl_motor;
@@ -99,17 +99,20 @@ void RM_RTOS_Default_Task(const void* args) {
     osDelay(500);  // DBUS initialization needs time
 
     while (true) {
-        chassis->Enable();
         const float ratio = 1.0f / 660.0f * 6 * PI;
-        chassis->SetSpeed(dbus->ch0 * ratio, dbus->ch1 * ratio, dbus->ch2 * ratio);
+        chassis->SetSpeed((dbus->ch0 * 0.01) * ratio, (dbus->ch1 * 0.01) * ratio, (dbus->ch2 * 0.01) * ratio);
 
         print("CH0: %d, CH1: %d, CH2: %d, CH3: %d\r\n", dbus->ch2, dbus->ch3, dbus->ch0, dbus->ch1);
         chassis->Chassis_DeBug_model(true);
 
         // Kill switch
         if (dbus->swl == remote::UP || dbus->swl == remote::DOWN) {
-            RM_ASSERT_TRUE(false, "Operation killed");
+            chassis->SetSpeed(0, 0, 0);
+            chassis->Disable();
+            print("Operation killed\n");
+//            RM_ASSERT_TRUE(false, "Operation killed");
         }
+
         chassis->SetPower(true, 30, 20, 60);
         chassis->Update();
         osDelay(10);

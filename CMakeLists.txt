@@ -9,7 +9,7 @@ project(uicrm)
 
 set(CMAKE_EXPORT_COMPILE_COMMANDS 1)
 
-add_subdirectory(Module_test)
+add_subdirectory(module_test)
 add_subdirectory(boards)
 add_subdirectory(programs)
 add_subdirectory(examples)
