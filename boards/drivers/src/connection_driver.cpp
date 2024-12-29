@@ -21,7 +21,19 @@
 #include "connection_driver.h"
 
 #include "bsp_os.h"
+#include "bsp_print.h"
+
 namespace driver {
+    /**
+     * @brief 检查连接是否在线
+     *
+     * 此成员函数用于判断当前连接驱动是否在线。
+     *
+     * @return 如果连接驱动在线，则返回 true；否则返回 false。
+     *         如果 last_uptime_ 为 0，表示没有记录最后上线时间，直接返回 false。
+     *         否则，计算当前时间与 last_uptime_ 的差值，如果该差值小于 online_threshold_，
+     *         则认为连接驱动仍然在线，返回 true；否则返回 false。
+     */
     bool ConnectionDriver::IsOnline() const {
         if (last_uptime_ == 0) {
             return false;
@@ -34,6 +46,11 @@ namespace driver {
     uint32_t ConnectionDriver::GetLastUptime() {
         return last_uptime_;
     }
+
+    uint32_t ConnectionDriver::GetSetThreshold() {
+        return online_threshold_;
+    }
+
     void ConnectionDriver::SetThreshold(uint32_t threshold) {
         online_threshold_ = threshold;
     }

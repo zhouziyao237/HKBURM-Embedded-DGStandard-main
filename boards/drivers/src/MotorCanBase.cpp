@@ -433,7 +433,8 @@ namespace driver {
     * 然后注册一个CAN接收回调函数can_motor_callback，当接收到指定ID的CAN消息时，
     * 该回调函数将被调用以处理接收到的电机数据。
     */
-   Motor3508::Motor3508(CAN* can, uint16_t rx_id) : MotorCANBase(can, rx_id) {
+   Motor3508::Motor3508(CAN* can, uint16_t rx_id, uint16_t tx_id)
+       : MotorCANBase(can, rx_id, tx_id){
        can->RegisterRxCallback(rx_id, can_motor_callback, this);
    }
 

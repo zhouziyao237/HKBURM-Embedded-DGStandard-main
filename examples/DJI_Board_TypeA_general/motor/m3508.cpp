@@ -29,13 +29,13 @@
 #define KEY_GPIO_PIN KEY_Pin
 
 // Refer to typeA datasheet for channel detail
-static bsp::CAN* can1 = nullptr;
+static bsp::CAN* can2 = nullptr;
 static driver::Motor3508* motor1 = nullptr;
 
 void RM_RTOS_Init() {
     print_use_uart(&huart8);
-    can1 = new bsp::CAN(&hcan1, true);
-    motor1 = new driver::Motor3508(can1, 0x201);
+    can2 = new bsp::CAN(&hcan2, true);
+    motor1 = new driver::Motor3508(can2, 0x201,0x1FF);
     motor1->SetTransmissionRatio(19);
     control::ConstrainedPID::PID_Init_t omega_pid_init = {
         .kp = 2500,
@@ -76,7 +76,7 @@ void RM_RTOS_Default_Task(const void* args) {
             }
             if (current == 0) {
                 current = 1;
-                motor1->SetTarget(15 * PI);
+                motor1->SetTarget(0.01);
             } else {
                 current = 0;
                 motor1->SetTarget(0);
@@ -84,6 +84,7 @@ void RM_RTOS_Default_Task(const void* args) {
 
             osDelay(20);
         }
+
         motor1->PrintData();
         osDelay(20);
     }

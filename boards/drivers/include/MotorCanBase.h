@@ -413,7 +413,7 @@ namespace driver {
     class Motor3508 : public MotorCANBase {
       public:
         /* constructor wrapper over MotorCANBase */
-        Motor3508(bsp::CAN* can, uint16_t rx_id);
+        Motor3508(bsp::CAN* can, uint16_t rx_id, uint16_t tx_id = 0x00);
         /* implements data update callback */
         void UpdateData(const uint8_t data[]) override final;
         /* implements data printout */

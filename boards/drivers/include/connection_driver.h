@@ -38,6 +38,8 @@ namespace driver {
 
         uint32_t GetLastUptime();
 
+        uint32_t GetSetThreshold();
+
         void SetThreshold(uint32_t threshold);
 
       protected:
