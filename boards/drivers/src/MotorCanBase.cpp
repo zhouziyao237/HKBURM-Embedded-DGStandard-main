@@ -517,9 +517,9 @@ namespace driver {
     *
     * 初始化Motor6020电机对象，继承自MotorCANBase类。
     *
-    * @param can    指向CAN通信接口的指针，用于与电机进行通信。
-    * @param rx_id   接收CAN消息的ID，用于接收来自电机的数据。
-    * @param tx_id   发送CAN消息的ID，用于向电机发送数据。
+    * @param can 指向CAN通信接口的指针，用于与Motor6020电机进行通信。
+    * @param rx_id 接收CAN消息的ID，用于接收来自Motor6020电机的数据。
+    * @param tx_id 发送CAN消息的ID，用于向Motor6020电机发送数据。
     *
     * 构造函数首先调用基类MotorCANBase的构造函数进行初始化，
     * 由于Motor6020是绝对位置电机，因此不需要初始化align_angle_（对齐角度），

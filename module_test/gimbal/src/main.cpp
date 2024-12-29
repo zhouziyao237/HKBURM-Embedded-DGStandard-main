@@ -102,7 +102,7 @@ void RM_RTOS_Threads_Init(void) {
 void RM_RTOS_Default_Task(const void* arg) {
     UNUSED(arg);
     osDelay(3000);
-//    Buzzer_Sing(DJI);
+    Buzzer_Sing(DJI);
     char s[50];
     while (true) {
         if (referee->game_robot_status.mains_power_gimbal_output) {
@@ -199,6 +199,6 @@ void RM_RTOS_Default_Task(const void* arg) {
         print("Vision Target: %.3f %.3f\r\n", minipc->target_angle.target_pitch,
               minipc->target_angle.target_yaw);
         debug_chassis(true);
-        osDelay(200);
+        osDelay(100);
     }
 }

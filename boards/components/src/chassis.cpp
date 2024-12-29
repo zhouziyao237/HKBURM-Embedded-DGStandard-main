@@ -148,15 +148,10 @@ namespace control {
         * */
         bool need_shutdown = !IsOnline();
         for (int i = 0; i < wheel_num_; i++) {
-//            print("GetLastUptime: %d\n", GetLastUptime());
-//            print("GetSetThreshold %d\n", GetSetThreshold());
-//            print("motor %d online: %d\n", i, motors_[i]->IsOnline());
-//            print("motor_ID: %d\n", motors_[i]);
-//            print("wheel_num_: %d\n", wheel_num_);
-//            if (!motors_[i]->IsOnline()) {
-//                need_shutdown = true;
-//                break;
-//            }
+            if (!motors_[i]->IsOnline()) {
+                need_shutdown = true;
+                break;
+            }
         }
         // todo: ???什么东西这是
         if (need_shutdown) {

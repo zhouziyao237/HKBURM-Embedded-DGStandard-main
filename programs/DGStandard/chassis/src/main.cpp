@@ -69,7 +69,7 @@ void RM_RTOS_Init(void) {
     HAL_Delay(100);
     print_use_uart(&huart1, true, 115200);
     print("RM_RTOS_CHASSIS_Task\r\n");
-    can2 = new bsp::CAN(&hcan2, true);
+    can2 = new bsp::CAN(&hcan2, false);
     can1 = new bsp::CAN(&hcan1, true, 8);
     fl_motor = new driver::Motor3508(can2, 0x202);
     fr_motor = new driver::Motor3508(can2, 0x201);
@@ -95,19 +95,19 @@ void RM_RTOS_Init(void) {
 
     fl_motor->ReInitPID(omega_pid_init, driver::MotorCANBase::OMEGA);
     fl_motor->SetMode(driver::MotorCANBase::OMEGA);
-    fl_motor->SetTransmissionRatio(14);
+    fl_motor->SetTransmissionRatio(19);
 
     fr_motor->ReInitPID(omega_pid_init, driver::MotorCANBase::OMEGA);
     fr_motor->SetMode(driver::MotorCANBase::OMEGA);
-    fr_motor->SetTransmissionRatio(14);
+    fr_motor->SetTransmissionRatio(19);
 
     bl_motor->ReInitPID(omega_pid_init, driver::MotorCANBase::OMEGA);
     bl_motor->SetMode(driver::MotorCANBase::OMEGA);
-    bl_motor->SetTransmissionRatio(14);
+    bl_motor->SetTransmissionRatio(19);
 
     br_motor->ReInitPID(omega_pid_init, driver::MotorCANBase::OMEGA);
     br_motor->SetMode(driver::MotorCANBase::OMEGA);
-    br_motor->SetTransmissionRatio(14);
+    br_motor->SetTransmissionRatio(19);
 
     driver::supercap_init_t supercap_init = {
         .can = can2,
@@ -171,7 +171,7 @@ void RM_RTOS_Default_Task(const void* args) {
     while (true) {
         if(Debug == CHASSIS_DEBUG) {
             print("CH0:%d CH1:%d CH2:%d CH3:%d\r\n", ch0, ch1, ch2, ch3);
-            print("VX: %d, VY: %d, VT: %d\r\n", chassis->Chassis_DeBug_ret_velocity());
+            chassis->Chassis_DeBug_model(true);
         }
         chassis->Update();
         osDelay(10);
