@@ -25,6 +25,13 @@
 
 namespace control {
 
+    /**
+     * @brief Gimbal类的构造函数
+     *
+     * 初始化Gimbal对象，使用提供的gimbal结构体来设置俯仰电机、偏航电机和数据。
+     *
+     * @param gimbal 包含Gimbal相关配置的结构体，包括俯仰电机、偏航电机和数据
+     */
     Gimbal::Gimbal(gimbal_t gimbal) {
         // acquired from user
         pitch_motor_ = gimbal.pitch_motor;
@@ -40,13 +47,34 @@ namespace control {
         yaw_upper_limit_ = wrap<float>(data_.yaw_offset_ + data_.yaw_max_, 0, 2 * PI);
     }
 
+    /**
+     * @brief Gimbal类的析构函数
+     *
+     * Gimbal类的析构函数，用于在对象销毁时执行必要的清理工作。
+     * 在这个特定的实现中，析构函数没有执行任何操作，因为所有的资源清理工作可能已经在其他成员函数中被处理。
+     */
     Gimbal::~Gimbal() {
     }
 
+    /**
+     * @brief 获取云台的数据指针
+     *
+     * 返回指向云台数据结构的指针，该数据结构包含云台的各种配置参数。
+     *
+     * @return gimbal_data_t* 云台数据结构的指针
+     */
     gimbal_data_t* Gimbal::GetData() {
         return &data_;
     }
 
+    /**
+     * @brief 更新云台的状态
+     *
+     * 此函数用于更新云台的状态，包括俯仰角和偏航角，并将更新后的角度设置给相应的电机。
+     * 如果设置了非圆周偏航模式，则会对偏航角进行裁剪，确保其在设定的上下限范围内。
+     *
+     * 注意：代码中包含了一些被注释掉的代码段，这些代码段原本用于计算角度差、PID控制输出等，但在当前版本中未被使用。
+     */
     void Gimbal::Update() {
         pitch_angle_ = clip<float>(pitch_angle_, pitch_lower_limit_, pitch_upper_limit_);
         pitch_motor_->SetTarget(pitch_angle_);
@@ -82,6 +110,14 @@ namespace control {
         //        yaw_motor_->SetOutput(yo_out);
     }
 
+    /**
+     * @brief 更新云台IMU数据
+     *
+     * 根据当前俯仰角和偏航角与IMU传感器测量到的角度差，计算新的目标角度，并设置给俯仰和偏航电机。
+     *
+     * @param pitch IMU传感器测量到的俯仰角，单位为弧度
+     * @param yaw IMU传感器测量到的偏航角，单位为弧度
+     */
     void Gimbal::UpdateIMU(float pitch, float yaw) {
         float pt_diff = pitch_angle_ - data_.pitch_offset_ - pitch;
         float actual_pitch_angle = pitch_motor_->GetTheta();
