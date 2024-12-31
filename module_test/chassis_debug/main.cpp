@@ -100,7 +100,7 @@ void RM_RTOS_Default_Task(const void* args) {
 
     while (true) {
         const float ratio = 1.0f / 660.0f * 6 * PI;
-//        chassis->SetSpeed((dbus->ch0 * 0.1) * ratio, (dbus->ch1 * 0.1) * ratio, (dbus->ch2 * 0.1) * ratio);
+//        chassis_main->SetSpeed((dbus->ch0 * 0.1) * ratio, (dbus->ch1 * 0.1) * ratio, (dbus->ch2 * 0.1) * ratio);
         chassis->SetSpeed(dbus->ch0 * ratio, dbus->ch1 * ratio, dbus->ch2 * ratio);
 
         print("CH0: %d, CH1: %d, CH2: %d, CH3: %d\r\n", dbus->ch2, dbus->ch3, dbus->ch0, dbus->ch1);

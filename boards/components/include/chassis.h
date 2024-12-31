@@ -35,16 +35,16 @@ extern remote::DBUS* dbus;
 namespace control {
 
     /**
-     * @brief chassis models
+     * @brief chassis_main models
      */
     typedef enum { CHASSIS_MECANUM_WHEEL, CHASSIS_OMNI_WHEEL } chassis_model_t;
 
     /**
-     * @brief structure used when chassis instance is initialized
+     * @brief structure used when chassis_main instance is initialized
      */
     struct chassis_t {
-        driver::MotorCANBase** motors; /* motor instances of all chassis motors */
-        chassis_model_t model;         /* chassis model                         */
+        driver::MotorCANBase** motors; /* motor instances of all chassis_main motors */
+        chassis_model_t model;         /* chassis_main model                         */
         float offset = 0;
         bool power_limit_on = false;
         bool has_super_capacitor = false;
@@ -69,38 +69,38 @@ namespace control {
     };
 
     /**
-     * @brief wrapper class for chassis
+     * @brief wrapper class for chassis_main
      */
     class Chassis : public driver::ConnectionDriver {
       public:
         /**
-         * @brief constructor for chassis
+         * @brief constructor for chassis_main
          *
-         * @param chassis structure that used to initialize chassis, refer to type
+         * @param chassis structure that used to initialize chassis_main, refer to type
          * chassis_t
          */
         explicit Chassis(const chassis_t chassis);
 
         /**
-         * @brief destructor for chassis
+         * @brief destructor for chassis_main
          */
         ~Chassis() override;
 
         /**
-         * @brief set the speed for chassis motors
+         * @brief set the speed for chassis_main motors
          *
-         * @param x_speed chassis speed on x-direction
-         * @param y_speed chassis speed on y-direction
-         * @param turn_speed chassis clockwise turning speed
+         * @param x_speed chassis_main speed on x-direction
+         * @param y_speed chassis_main speed on y-direction
+         * @param turn_speed chassis_main clockwise turning speed
          */
         void SetSpeed(const float x_speed, const float y_speed = 0, const float turn_speed = 0);
 
         /**
-         * @brief set the power limit for chassis motors
+         * @brief set the power limit for chassis_main motors
          * @param power_limit_on whether to enable power limit
          * @param power_limit total power limit, in [W]
-         * @param chassis_power Current chassis power, in [W]
-         * @param chassis_power_buffer Current chassis power buffer, in [J]
+         * @param chassis_power Current chassis_main power, in [W]
+         * @param chassis_power_buffer Current chassis_main power buffer, in [J]
          */
         void SetPower(bool power_limit_on, float power_limit, float chassis_power,
                       float chassis_power_buffer, bool enable_supercap = false);
@@ -162,7 +162,7 @@ namespace control {
         driver::MotorCANBase** motors_ = nullptr;
         chassis_model_t model_;
 
-        // pids and current speeds for each motor on the chassis
+        // pids and current speeds for each motor on the chassis_main
         PowerLimit* power_limit_ = nullptr;
         float* speeds_ = nullptr;
 
@@ -206,20 +206,20 @@ namespace control {
         void Enable();
         void Disable();
         /**
-         * @brief set the speed for chassis motors
+         * @brief set the speed for chassis_main motors
          *
-         * @param x_speed chassis speed on x-direction
-         * @param y_speed chassis speed on y-direction
-         * @param turn_speed chassis clockwise turning speed
+         * @param x_speed chassis_main speed on x-direction
+         * @param y_speed chassis_main speed on y-direction
+         * @param turn_speed chassis_main clockwise turning speed
          */
         void SetSpeed(const float x_speed, const float y_speed = 0, const float turn_speed = 0);
 
         /**
-         * @brief set the power limit for chassis motors
+         * @brief set the power limit for chassis_main motors
          * @param power_limit_on whether to enable power limit
          * @param power_limit total power limit, in [W]
-         * @param chassis_power Current chassis power, in [W]
-         * @param chassis_power_buffer Current chassis power buffer, in [J]
+         * @param chassis_power Current chassis_main power, in [W]
+         * @param chassis_power_buffer Current chassis_main power buffer, in [J]
          */
         void SetPower(bool power_limit_on, float power_limit, float chassis_power,
                       float chassis_power_buffer, bool enable_supercap = false,

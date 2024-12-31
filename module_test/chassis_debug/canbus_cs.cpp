@@ -49,7 +49,7 @@ void RM_RTOS_Init(void) {
 
 //   can1 = new bsp::CAN(&hcan1, true);
 //   chassis_can = new communication::CanBridge(can1, 0x52);
-//   chassis_can->RegisterRxCallback(0x70, chassis->CanbusresdebugWrapper, nullptr);
+//   chassis_can->RegisterRxCallback(0x70, chassis_main->CanbusresdebugWrapper, nullptr);
 
    print("CAN init finish\r\n");
 

@@ -157,7 +157,7 @@ void chassisTask(void* arg) {
 
         chassis->SetSpeed(chassis_vx, chassis_vy, chassis_vt);
         osDelay(CHASSIS_OS_DELAY);
-//        chassis->SetPower(true, referee->game_robot_status.chassis_power_limit,
+//        chassis_main->SetPower(true, referee->game_robot_status.chassis_power_limit,
 //                          referee->power_heat_data.chassis_power,
 //                          referee->power_heat_data.chassis_power_buffer, false);
         chassis->SetPower(true, 30, 20, 20);

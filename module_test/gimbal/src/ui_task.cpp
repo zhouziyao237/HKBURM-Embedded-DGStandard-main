@@ -54,7 +54,7 @@ void uiTask(void* arg) {
     communication::graphic_data_t graphEmpty2;
     UI->CircleDraw(&graphEmpty2, "E2", UI_Graph_Del, 0, UI_Color_Green, 0, 0, 0, 0);
 
-    // Initialize chassis GUI
+    // Initialize chassis_main GUI
     chassisGUI = new communication::ChassisGUI(UI);
     osDelay(110);
     chassisGUI->Init2();
@@ -145,7 +145,7 @@ void uiTask(void* arg) {
     BoolEdgeDetector* imu_temp_edge = new BoolEdgeDetector(false);
     BoolEdgeDetector* shoot_jam_edge = new BoolEdgeDetector(false);
     while (true) {
-        // Update chassis GUI
+        // Update chassis_main GUI
         // 通过两个云台电机的角度
         relative_angle = yaw_motor->GetThetaDelta(gimbal_param->yaw_offset_);
         pitch_angle = pitch_motor->GetThetaDelta(gimbal_param->pitch_offset_);
