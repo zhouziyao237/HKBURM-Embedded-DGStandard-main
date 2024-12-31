@@ -39,6 +39,7 @@ enum RemoteMode {
    REMOTE_MODE_SPIN = 2,
    REMOTE_MODE_ADVANCED = 3,
    REMOTE_MODE_AUTOAIM = 4,
+   REMOTE_MODE_SITCK_SHIFT = 5,
 };
 extern RemoteMode remote_mode;
 enum ShootFricMode {

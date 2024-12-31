@@ -165,6 +165,10 @@ void gimbalTask(void* arg) {
                                       -minipc->target_angle.target_yaw);
                     gimbal->UpdateIMU(INS_Angle.pitch, INS_Angle.yaw);
                     break;
+                case REMOTE_MODE_SITCK_SHIFT:
+                    gimbal->TargetRel(pitch_diff, yaw_diff);
+                    gimbal->Update();
+                    break;
                 default:
                     break;
             }

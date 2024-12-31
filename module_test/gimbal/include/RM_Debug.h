@@ -15,6 +15,15 @@ namespace communication {
 
     } RM_Debug_mode_t;
 
+    /* ===== control_model  0x0602 ===== */
+    typedef struct {
+        bool gimbal_control_model;
+        bool chassis_control_model;
+        bool shooter_control_model;
+
+    } RM_Control_model_t;
+
+
     class DebugModel {
       public:
         RM_Debug_mode_t RM_Debug_mode{};

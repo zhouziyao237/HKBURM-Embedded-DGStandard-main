@@ -129,6 +129,17 @@ namespace control {
         //        yaw_motor_->SetOutput(yo_out);
     }
 
+    /**
+     * @brief 设置云台的目标绝对俯仰角和偏航角
+     *
+     * 根据给定的绝对俯仰角（abs_pitch）和偏航角（abs_yaw），设置云台的目标俯仰角和偏航角。
+     * 如果数据结构中指定了俯仰角或偏航角是反向的，则对输入角度取反。
+     * 然后，将输入角度限制在指定的最大和最小范围内，并根据偏移量进行调整。
+     * 最后，将调整后的角度包装在指定的上下限内，并考虑圆周偏航模式。
+     *
+     * @param abs_pitch 绝对俯仰角，单位为弧度
+     * @param abs_yaw 绝对偏航角，单位为弧度
+     */
     void Gimbal::TargetAbs(float abs_pitch, float abs_yaw) {
         if (data_.pitch_inverted)
             abs_pitch = -abs_pitch;
@@ -146,6 +157,16 @@ namespace control {
         }
     }
 
+    /**
+     * @brief 设置云台的目标相对俯仰角和偏航角
+     *
+     * 根据给定的相对俯仰角（rel_pitch）和偏航角（rel_yaw），更新云台当前的目标俯仰角和偏航角。
+     * 如果数据结构中指定了俯仰角或偏航角是反向的，则对输入角度取反。
+     * 然后，将当前角度与输入角度相加，并将结果包装在0到2π的范围内。
+     *
+     * @param rel_pitch 相对俯仰角，单位为弧度
+     * @param rel_yaw 相对偏航角，单位为弧度
+     */
     void Gimbal::TargetRel(float rel_pitch, float rel_yaw) {
         if (data_.pitch_inverted)
             rel_pitch = -rel_pitch;
