@@ -133,7 +133,7 @@ void RM_RTOS_Default_Task(const void* arg) {
             case REMOTE_MODE_SPIN:
                 strcpy(s, "SPIN");
                 break;
-            case REMOTE_MODE_SITCK_SHIFT:
+            case REMOTE_MODE_SITCK_SHIFT_GIMBAL:
                 strcpy(s, "STICK_SHIFT");
                 break;
 

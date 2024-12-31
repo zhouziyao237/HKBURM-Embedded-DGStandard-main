@@ -165,7 +165,8 @@ void gimbalTask(void* arg) {
                                       -minipc->target_angle.target_yaw);
                     gimbal->UpdateIMU(INS_Angle.pitch, INS_Angle.yaw);
                     break;
-                case REMOTE_MODE_SITCK_SHIFT:
+                case REMOTE_MODE_SITCK_SHIFT_GIMBAL:
+                    // 遥控器手动控制模式，将电机获取的云台当前角度作为参考系，直接通过遥控控制
                     gimbal->TargetRel(pitch_diff, yaw_diff);
                     gimbal->Update();
                     break;
