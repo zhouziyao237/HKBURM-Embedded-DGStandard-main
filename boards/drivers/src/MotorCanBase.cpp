@@ -617,7 +617,7 @@ namespace driver {
        return raw_temperature_;
    }
 
-   Motor2006::Motor2006(CAN* can, uint16_t rx_id) : MotorCANBase(can, rx_id) {
+   Motor2006::Motor2006(CAN* can, uint16_t rx_id, int16_t tx_id) : MotorCANBase(can, rx_id, tx_id) {
        can->RegisterRxCallback(rx_id, can_motor_callback, this);
    }
 
