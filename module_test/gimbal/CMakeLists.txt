@@ -15,5 +15,5 @@ uicrm_add_arm_executable(${PROJECT_NAME}_model_test_typeA
         src/referee_task.cpp
         src/ui_task.cpp
         src/buzzer_task.cpp
-        src/RM_Debug.cpp
+        src/RM_Debug_control_model.cpp
         INCLUDES include)

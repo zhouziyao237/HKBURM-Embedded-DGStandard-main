@@ -23,8 +23,8 @@
 //static driver::MotorPWMBase* flywheel_left = nullptr;
 //static driver::MotorPWMBase* flywheel_right = nullptr;
 
-static driver::Motor2006* flywheel_left = nullptr;
-static driver::Motor2006* flywheel_right = nullptr;
+static driver::Motor3508* flywheel_left = nullptr;
+static driver::Motor3508* flywheel_right = nullptr;
 
 driver::MotorCANBase* steering_motor = nullptr;
 
@@ -160,8 +160,10 @@ void shootTask(void* arg) {
     Ease* flywheel_speed_ease = new Ease(0, 0.3);
 
     while (true) {
-        if (remote_mode == REMOTE_MODE_KILL ||
-            !referee->game_robot_status.mains_power_shooter_output) {
+
+        // if (remote_mode == REMOTE_MODE_KILL ||
+        //     !referee->game_robot_status.mains_power_shooter_output) {
+        if (remote_mode == REMOTE_MODE_KILL) { //(临时解决方案)
             // 死了
             kill_shoot();
             osDelay(SHOOT_OS_DELAY);
@@ -170,19 +172,21 @@ void shootTask(void* arg) {
 
         if (shoot_flywheel_mode == SHOOT_FRIC_MODE_PREPARING ||
             shoot_flywheel_mode == SHOOT_FRIC_MODE_PREPARED) {
-//            启动摩擦轮电机(旋转)
-            flywheel_speed_ease->SetTarget(50);  // 摩擦轮转速(PWM控制)
+            // 启动摩擦轮电机(旋转)
+            flywheel_speed_ease->SetTarget(1);  // 摩擦轮转速(转速控制)
         } else {
-//            关闭摩擦轮电机(停止旋转)
-            flywheel_speed_ease->SetTarget(0);    // 摩擦轮转速(PWM控制)
+            // 关闭摩擦轮电机(停止旋转)
+            flywheel_speed_ease->SetTarget(0);    // 摩擦轮转速(转速控制)
         }
         flywheel_speed_ease->Calc();
-        flywheel_left->SetOutput(flywheel_speed_ease->GetOutput());
-        flywheel_right->SetOutput(flywheel_speed_ease->GetOutput());
+        flywheel_left->SetTarget(flywheel_speed_ease->GetOutput());
+        flywheel_right->SetTarget(-flywheel_speed_ease->GetOutput());
 
         // 检测摩擦轮是否就绪
         // 由shoot_task切换到SHOOT_FRIC_MODE_PREPARED
+        print("shoot_flywheel_mode: %d\n", shoot_flywheel_mode);
         if (shoot_flywheel_mode == SHOOT_FRIC_MODE_PREPARING && flywheel_speed_ease->IsAtTarget()) {
+            print("fric_motor prepared\n");
             shoot_flywheel_mode = SHOOT_FRIC_MODE_PREPARED;
         }
 
@@ -207,7 +211,6 @@ void shootTask(void* arg) {
                 print("locked_rotor_angle: %d\n", referee->shoot_data.locked_rotor_angle);
                 steering_motor->SetTarget(steering_motor->GetTarget() + 2 * PI / 8, false);
                 auto_unload_ammunition_new();
-
             }
         }
 
@@ -252,8 +255,8 @@ void init_shoot() {
 //    flywheel_left->SetOutput(0);
 //    flywheel_right->SetOutput(0);
 
-    flywheel_left = new driver::Motor2006(can2, 0x201);
-    flywheel_right = new driver::Motor2006(can2, 0x202);
+    flywheel_left = new driver::Motor3508(can2, 0x201);
+    flywheel_right = new driver::Motor3508(can2, 0x202);
     steering_motor = new driver::Motor2006(can2, 0x203);
 
     flywheel_left->SetTransmissionRatio(36);
@@ -305,17 +308,18 @@ void init_shoot() {
     flywheel_right->SetMode(driver::MotorCANBase::OMEGA);
     flywheel_right->RegisterErrorCallback(jam_callback, flywheel_right);
 
-    flywheel_left->SetOutput(0);
-    flywheel_right->SetOutput(0);
+    flywheel_left->SetTarget(0);
+    flywheel_right->SetTarget(0);
 
     shoot_key = new bsp::GPIO(TRIG_KEY_GPIO_Port, TRIG_KEY_Pin);
+
     if(CAR_DEBUG->RM_Debug_mode.shooter_debug_mode == Debug_true){
         print("SHOOT_INIT_OK\n");
     }
     // laser = new bsp::Laser(&htim3, 3, 1000000);
 }
 void kill_shoot() {
-    steering_motor->SetOutput(0);
-    flywheel_left->SetOutput(0);
-    flywheel_right->SetOutput(0);
+    steering_motor->SetTarget(0);
+    flywheel_left->SetTarget(0);
+    flywheel_right->SetTarget(0);
 }

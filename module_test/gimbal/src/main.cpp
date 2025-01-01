@@ -116,7 +116,7 @@ void RM_RTOS_Default_Task(const void* arg) {
 
 //        set_cursor(0, 0);
 //        clear_screen();
-
+//        remote_mode = REMOTE_MODE_SITCK_SHIFT_GIMBAL;
         switch (remote_mode) {
             case REMOTE_MODE_PREPARE:
                 strcpy(s, "PREPARE");
@@ -145,7 +145,7 @@ void RM_RTOS_Default_Task(const void* arg) {
         print("Mode:%s\r\n", s);
         switch (shoot_flywheel_mode) {
             case SHOOT_FRIC_MODE_PREPARING:
-                strcpy(s, "PREPARE");
+                strcpy(s, "PREPAREING");
                 break;
             case SHOOT_FRIC_MODE_STOP:
                 strcpy(s, "STOP");
@@ -160,6 +160,7 @@ void RM_RTOS_Default_Task(const void* arg) {
                 strcpy(s, "UNKNOWN");
                 break;
         }
+
         print("Shoot Fric Mode:%s\r\n", s);
         switch (shoot_load_mode) {
             case SHOOT_MODE_STOP:

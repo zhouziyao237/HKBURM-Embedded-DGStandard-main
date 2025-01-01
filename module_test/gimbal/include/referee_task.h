@@ -19,13 +19,13 @@
  ###########################################################*/
 
 #pragma once
+#include "RM_Debug_control_model.h"
 #include "bsp_print.h"
 #include "bsp_uart.h"
 #include "cmsis_os2.h"
 #include "dbus.h"
 #include "main.h"
 #include "protocol.h"
-#include "RM_Debug.h"
 
 #define RX_SIGNAL (1 << 0)
 

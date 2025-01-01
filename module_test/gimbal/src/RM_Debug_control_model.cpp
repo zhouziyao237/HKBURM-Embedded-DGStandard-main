@@ -1,8 +1,9 @@
 //
 // Created by Administrator on 2024/11/22.
 //
+#include "RM_Debug_control_model.h"
+
 #include "bsp_print.h"
-#include "RM_Debug.h"
 
 #define Debug_true 1
 #define Debug_false 0

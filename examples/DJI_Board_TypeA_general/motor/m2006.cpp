@@ -29,20 +29,20 @@
 #define KEY_GPIO_PIN KEY_Pin
 
 // Refer to typeA datasheet for channel detail
-static bsp::CAN* can1 = nullptr;
+static bsp::CAN* can2 = nullptr;
 static driver::Motor2006* motor1 = nullptr;
 static driver::Motor2006* motor2 = nullptr;
 static driver::Motor2006* motor3 = nullptr;
 
 void RM_RTOS_Init() {
    print_use_uart(&huart8);
-   can1 = new bsp::CAN(&hcan1, true);
-   motor1 = new driver::Motor2006(can1, 0x201);
-   motor2 = new driver::Motor2006(can1, 0x202);
-   motor3 = new driver::Motor2006(can1, 0x205);
-   motor1->SetTransmissionRatio(36);
-   motor2->SetTransmissionRatio(36);
-   motor3->SetTransmissionRatio(36);
+   can2 = new bsp::CAN(&hcan2, true);
+   motor1 = new driver::Motor2006(can2, 0x201);
+   motor2 = new driver::Motor2006(can2, 0x202);
+   motor3 = new driver::Motor2006(can2, 0x203);
+   motor1->SetTransmissionRatio(19);
+   motor2->SetTransmissionRatio(19);
+   motor3->SetTransmissionRatio(19);
    control::ConstrainedPID::PID_Init_t omega_pid_init = {
        .kp = 1000,
        .ki = 1,

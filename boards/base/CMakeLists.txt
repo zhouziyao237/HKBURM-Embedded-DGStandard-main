@@ -1,5 +1,5 @@
 # generic board interface
-add_library(board_interface INTERFACE ../../Module_test/gimbal/src/RM_Debug.cpp)
+add_library(board_interface INTERFACE ../../module_test/gimbal/src/RM_Debug_control_model.cpp)
 target_compile_definitions(board_interface INTERFACE USE_HAL_DRIVER)
 target_compile_options(board_interface INTERFACE
         $<$<COMPILE_LANGUAGE:ASM>:-x assembler-with-cpp>
