@@ -296,7 +296,6 @@ void init_shoot() {
     };
     steering_motor->ReInitPID(steering_motor_omega_pid_init, driver::MotorCANBase::OMEGA);
     steering_motor->SetMode(driver::MotorCANBase::THETA | driver::MotorCANBase::OMEGA);
-
     steering_motor->RegisterErrorCallback(jam_callback, steering_motor);
 //    steering_motor->RegisterErrorCallback(jam_callback, steering_motor);
 
