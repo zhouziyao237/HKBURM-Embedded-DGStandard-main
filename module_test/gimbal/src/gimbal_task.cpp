@@ -41,7 +41,13 @@ void debug_gimbal_init(){
     }
 }
 
-void debug_gimbal();
+void debug_gimbal(bool newline){
+    if(CAR_DEBUG->RM_Debug_mode.gimbal_debug_mode == Debug_true) {
+        print("Gimbal_pitch: %.2f, Gimbal_yaw: %.2f", INS_Angle.pitch, INS_Angle.yaw);
+        print("Gimbal_pitch_diff: %.2f, Gimbal_yaw_diff: %.2f\n", pitch_diff, yaw_diff);
+        if(newline){print("\r\n");}
+    }
+}
 
 void check_kill();
 
@@ -165,13 +171,15 @@ void gimbalTask(void* arg) {
                                       -minipc->target_angle.target_yaw);
                     gimbal->UpdateIMU(INS_Angle.pitch, INS_Angle.yaw);
                     break;
-                case REMOTE_MODE_SITCK_SHIFT_GIMBAL:
-                    // 遥控器手动控制模式，将电机获取的云台当前角度作为参考系，直接通过遥控控制
-                    gimbal->TargetRel(pitch_diff, yaw_diff);
-                    gimbal->Update();
-                    break;
                 default:
                     break;
+            }
+
+            if (remote_mode == REMOTE_MODE_SITCK_SHIFT_GIMBAL){
+                // 遥控器手动控制模式，将电机获取的云台当前角度作为参考系，直接通过遥控控制
+                gimbal->TargetRel(pitch_diff, yaw_diff);
+                gimbal->Update();
+                break;
             }
         }
 

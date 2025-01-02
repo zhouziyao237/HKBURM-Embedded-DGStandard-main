@@ -323,3 +323,47 @@ void kill_shoot() {
     flywheel_left->SetTarget(0);
     flywheel_right->SetTarget(0);
 }
+
+void shoot_remote_mode(){
+    char s[20];
+    switch (shoot_flywheel_mode) {
+        case SHOOT_FRIC_MODE_PREPARING:
+            strcpy(s, "PREPAREING");
+            break;
+        case SHOOT_FRIC_MODE_STOP:
+            strcpy(s, "STOP");
+            break;
+        case SHOOT_FRIC_MODE_PREPARED:
+            strcpy(s, "PREPARED");
+            break;
+        case SHOOT_FRIC_MODE_DISABLE:
+            strcpy(s, "DISABLE");
+            break;
+        default:
+            strcpy(s, "UNKNOWN");
+            break;
+    }
+
+    print("Shoot Fric Mode:%s\r\n", s);
+    switch (shoot_load_mode) {
+        case SHOOT_MODE_STOP:
+            strcpy(s, "STOP");
+            break;
+        case SHOOT_MODE_IDLE:
+            strcpy(s, "IDLE");
+            break;
+        case SHOOT_MODE_DISABLE:
+            strcpy(s, "DISABLE");
+            break;
+        case SHOOT_MODE_UNLOAD:
+            strcpy(s, "UNLOAD");
+            break;
+        case SHOOT_MODE_SINGLE:
+            strcpy(s, "SINGLE");
+            break;
+        case SHOOT_MODE_BURST:
+            strcpy(s, "BURST");
+            break;
+    }
+    print("Shoot Mode:%s\r\n", s);
+}

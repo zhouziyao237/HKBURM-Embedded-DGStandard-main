@@ -42,7 +42,7 @@ const osThreadAttr_t chassisTaskAttribute = {.name = "chassisTask",
                                              .tz_module = 0,
                                              .reserved = 0};
 void debug_chassis_init();
-void debug_chassis(bool retprint = true, bool newlien = false);
+void debug_chassis(bool retprint = true, bool newline = false);
 void chassisTask(void* arg);
 void init_chassis();
 void kill_chassis();

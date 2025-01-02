@@ -53,3 +53,5 @@ extern float pitch_diff, yaw_diff;
 extern INS_Angle_t INS_Angle;
 void init_gimbal();
 void kill_gimbal();
+
+void debug_gimbal(bool newline = false);

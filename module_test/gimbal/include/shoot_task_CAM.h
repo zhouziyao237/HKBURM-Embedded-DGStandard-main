@@ -55,3 +55,4 @@ extern control::ConstrainedPID::PID_Init_t flywheel_pid_init;
 void shootTask(void* arg);
 void init_shoot();
 void kill_shoot();
+void shoot_remote_mode();

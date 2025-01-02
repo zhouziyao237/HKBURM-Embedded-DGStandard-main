@@ -38,9 +38,9 @@ void debug_chassis_init(){
     }
 }
 
-void debug_chassis(bool retprint, bool newlien) {
+void debug_chassis(bool retprint, bool newline) {
     if (CAR_DEBUG->RM_Debug_mode.chassis_debug_mode == Debug_true) {
-        chassis->debug_chassis_can_model(retprint, newlien);
+        chassis->debug_chassis_can_model(retprint, newline);
         chassis->debug_chassis_RCCH(0x74);
     }
 }
@@ -111,13 +111,11 @@ void chassisTask(void* arg) {
         chassis_vy = -sin_yaw * car_vx + cos_yaw * car_vy;
         chassis_vt = 0;
 
-        if (remote_mode == REMOTE_MODE_ADVANCED || remote_mode == REMOTE_MODE_AUTOAIM || remote_mode == REMOTE_MODE_SITCK_SHIFT_CHASSIS) {
+        if (remote_mode == REMOTE_MODE_ADVANCED || remote_mode == REMOTE_MODE_AUTOAIM) {
             // 手动模式下，遥控器直接控制底盘速度
-            print("SITCK_SHIFT_CHASSIS: vx: %.2f, vy: %.2f, vt: %.2f\n", car_vx, car_vy, car_vt);
-            const float ratio = 1.0f / 660.0f * 6 * PI;
-            chassis_vx = car_vx * ratio;
-            chassis_vy = car_vy * ratio;
-            chassis_vt = car_vt * ratio;
+            chassis_vx = car_vx;
+            chassis_vy = car_vy;
+            chassis_vt = car_vt;
         }
 
         if (remote_mode == REMOTE_MODE_FOLLOW) {
@@ -141,6 +139,15 @@ void chassisTask(void* arg) {
             spin_speed = spin_speed + car_vt * 0.01;
             spin_speed = clip<float>(spin_speed, -1, 1);
             chassis_vt = spin_speed;
+        }
+
+        if (remote_mode == REMOTE_MODE_SITCK_SHIFT_CHASSIS) {
+            // 手动模式下，遥控器直接控制底盘速度
+            print("SITCK_SHIFT_CHASSIS: vx: %.2f, vy: %.2f, vt: %.2f\n", car_vx, car_vy, car_vt);
+            const float ratio = 1.0f / 660.0f * 6 * PI;
+            chassis_vx = car_vx * ratio;
+            chassis_vy = car_vy * ratio;
+            chassis_vt = car_vt * ratio;
         }
 
         // 进行缩放

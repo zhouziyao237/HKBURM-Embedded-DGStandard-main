@@ -42,6 +42,60 @@
 bsp::GPIO* Debug_LED = nullptr;
 bsp::GPIO* gimbal_power = nullptr;
 
+void RM_Car_main_remote_mode(){
+    char s[20];
+    switch (remote_mode) {
+        case REMOTE_MODE_PREPARE:
+            strcpy(s, "PREPARE");
+            break;
+        case REMOTE_MODE_STOP:
+            strcpy(s, "STOP");
+            break;
+        case REMOTE_MODE_KILL:
+            strcpy(s, "KILL");
+            break;
+        case REMOTE_MODE_FOLLOW:
+            strcpy(s, "MANUAL");
+            break;
+        case REMOTE_MODE_SPIN:
+            strcpy(s, "SPIN");
+            break;
+        case REMOTE_MODE_SITCK_SHIFT_GIMBAL:
+            strcpy(s, "STICK_SHIFT");
+            break;
+
+        default:
+            strcpy(s, "UNKNOWN");
+            break;
+    }
+    print("\n");
+    print("Mode:%s\r\n", s);
+}
+
+void RM_Car_main_data(bool newline = false){
+    print(
+        "CH0: %-4d CH1: %-4d CH2: %-4d CH3: %-4d \r\nSWL: %d SWR: %d "
+        "TWL: %d "
+        "@ %d "
+        "ms\r\n",
+        dbus->ch0, dbus->ch1, dbus->ch2, dbus->ch3, dbus->swl, dbus->swr, dbus->ch4,
+        dbus->timestamp);
+
+    print("Chassis Volt: %.3f\r\n", referee->power_heat_data.chassis_volt / 1000.0);
+    print("Chassis Curr: %.3f\r\n", referee->power_heat_data.chassis_current / 1000.0);
+    print("Chassis Power: %.3f\r\n", referee->power_heat_data.chassis_power);
+    print("\r\n");
+    print("Shooter Cooling Heat: %hu\r\n",
+          referee->power_heat_data.shooter_id1_17mm_cooling_heat);
+    print("Bullet Frequency: %hhu\r\n", referee->shoot_data.bullet_freq);
+    print("Bullet Speed: %.3f\r\n", referee->shoot_data.bullet_speed);
+    print("INS Angle: %.3f %.3f %.3f\r\n", ahrs->INS_angle[0], ahrs->INS_angle[1],
+          ahrs->INS_angle[2]);
+    print("Vision Target: %.3f %.3f\r\n", minipc->target_angle.target_pitch,
+          minipc->target_angle.target_yaw);
+    if(newline){print("\r\n");}
+}
+
 void RM_MODEL_INIT(void) {
     // 初始化can总线，can在各个进程中都需要被使用所以在这里独立初始化
     init_can();
@@ -103,7 +157,6 @@ void RM_RTOS_Default_Task(const void* arg) {
     UNUSED(arg);
     osDelay(3000);
     Buzzer_Sing(DJI);
-    char s[50];
     while (true) {
         if (referee->game_robot_status.mains_power_gimbal_output) {
             gimbal_power->High();
@@ -117,92 +170,10 @@ void RM_RTOS_Default_Task(const void* arg) {
 //        set_cursor(0, 0);
 //        clear_screen();
 
-        switch (remote_mode) {
-            case REMOTE_MODE_PREPARE:
-                strcpy(s, "PREPARE");
-                break;
-            case REMOTE_MODE_STOP:
-                strcpy(s, "STOP");
-                break;
-            case REMOTE_MODE_KILL:
-                strcpy(s, "KILL");
-                break;
-            case REMOTE_MODE_FOLLOW:
-                strcpy(s, "MANUAL");
-                break;
-            case REMOTE_MODE_SPIN:
-                strcpy(s, "SPIN");
-                break;
-            case REMOTE_MODE_SITCK_SHIFT_GIMBAL:
-                strcpy(s, "STICK_SHIFT");
-                break;
-
-            default:
-                strcpy(s, "UNKNOWN");
-                break;
-        }
-        print("\n");
-        print("Mode:%s\r\n", s);
-        switch (shoot_flywheel_mode) {
-            case SHOOT_FRIC_MODE_PREPARING:
-                strcpy(s, "PREPAREING");
-                break;
-            case SHOOT_FRIC_MODE_STOP:
-                strcpy(s, "STOP");
-                break;
-            case SHOOT_FRIC_MODE_PREPARED:
-                strcpy(s, "PREPARED");
-                break;
-            case SHOOT_FRIC_MODE_DISABLE:
-                strcpy(s, "DISABLE");
-                break;
-            default:
-                strcpy(s, "UNKNOWN");
-                break;
-        }
-
-        print("Shoot Fric Mode:%s\r\n", s);
-        switch (shoot_load_mode) {
-            case SHOOT_MODE_STOP:
-                strcpy(s, "STOP");
-                break;
-            case SHOOT_MODE_IDLE:
-                strcpy(s, "IDLE");
-                break;
-            case SHOOT_MODE_DISABLE:
-                strcpy(s, "DISABLE");
-                break;
-            case SHOOT_MODE_UNLOAD:
-                strcpy(s, "UNLOAD");
-                break;
-            case SHOOT_MODE_SINGLE:
-                strcpy(s, "SINGLE");
-                break;
-            case SHOOT_MODE_BURST:
-                strcpy(s, "BURST");
-                break;
-        }
-        print("Shoot Mode:%s\r\n", s);
-        print(
-            "CH0: %-4d CH1: %-4d CH2: %-4d CH3: %-4d \r\nSWL: %d SWR: %d "
-            "TWL: %d "
-            "@ %d "
-            "ms\r\n",
-            dbus->ch0, dbus->ch1, dbus->ch2, dbus->ch3, dbus->swl, dbus->swr, dbus->ch4,
-            dbus->timestamp);
-
-        print("Chassis Volt: %.3f\r\n", referee->power_heat_data.chassis_volt / 1000.0);
-        print("Chassis Curr: %.3f\r\n", referee->power_heat_data.chassis_current / 1000.0);
-        print("Chassis Power: %.3f\r\n", referee->power_heat_data.chassis_power);
-        print("\r\n");
-        print("Shooter Cooling Heat: %hu\r\n",
-              referee->power_heat_data.shooter_id1_17mm_cooling_heat);
-        print("Bullet Frequency: %hhu\r\n", referee->shoot_data.bullet_freq);
-        print("Bullet Speed: %.3f\r\n", referee->shoot_data.bullet_speed);
-        print("INS Angle: %.3f %.3f %.3f\r\n", ahrs->INS_angle[0], ahrs->INS_angle[1],
-              ahrs->INS_angle[2]);
-        print("Vision Target: %.3f %.3f\r\n", minipc->target_angle.target_pitch,
-              minipc->target_angle.target_yaw);
+        RM_Car_main_remote_mode();
+        shoot_remote_mode();
+        RM_Car_main_data(false);
+        debug_gimbal(false);
         debug_chassis(true);
         osDelay(100);
     }

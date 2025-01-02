@@ -32,6 +32,8 @@
 #define Debug_true 1
 #define Debug_false 0
 
+#define Control_true 1
+#define Control_false 0
 
 typedef struct {
     float pitch;
