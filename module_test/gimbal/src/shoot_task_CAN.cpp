@@ -26,7 +26,8 @@
 static driver::Motor3508* flywheel_left = nullptr;
 static driver::Motor3508* flywheel_right = nullptr;
 
-driver::MotorCANBase* steering_motor = nullptr;
+//driver::MotorCANBase* steering_motor = nullptr;
+driver::Motor2006* steering_motor = nullptr;
 
 bsp::GPIO* shoot_key = nullptr;
 
@@ -186,7 +187,6 @@ void shootTask(void* arg) {
         // 由shoot_task切换到SHOOT_FRIC_MODE_PREPARED
         print("shoot_flywheel_mode: %d\n", shoot_flywheel_mode);
         if (shoot_flywheel_mode == SHOOT_FRIC_MODE_PREPARING && flywheel_speed_ease->IsAtTarget()) {
-            print("fric_motor prepared\n");
             shoot_flywheel_mode = SHOOT_FRIC_MODE_PREPARED;
         }
 

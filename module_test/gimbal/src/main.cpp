@@ -116,7 +116,7 @@ void RM_RTOS_Default_Task(const void* arg) {
 
 //        set_cursor(0, 0);
 //        clear_screen();
-//        remote_mode = REMOTE_MODE_SITCK_SHIFT_GIMBAL;
+
         switch (remote_mode) {
             case REMOTE_MODE_PREPARE:
                 strcpy(s, "PREPARE");
