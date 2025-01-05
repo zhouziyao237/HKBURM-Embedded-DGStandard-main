@@ -36,10 +36,10 @@ static driver::Motor2006* motor3 = nullptr;
 
 void RM_RTOS_Init() {
    print_use_uart(&huart8);
-   can2 = new bsp::CAN(&hcan2, true);
+   can2 = new bsp::CAN(&hcan2, false);
    motor1 = new driver::Motor2006(can2, 0x201);
    motor2 = new driver::Motor2006(can2, 0x202);
-   motor3 = new driver::Motor2006(can2, 0x203);
+   motor3 = new driver::Motor2006(can2, 0x207);
    motor1->SetTransmissionRatio(19);
    motor2->SetTransmissionRatio(19);
    motor3->SetTransmissionRatio(19);
@@ -102,6 +102,7 @@ void RM_RTOS_Default_Task(const void* args) {
        }
        motor1->PrintData();
        motor2->PrintData();
+       motor3->PrintData();
        osDelay(20);
    }
 }

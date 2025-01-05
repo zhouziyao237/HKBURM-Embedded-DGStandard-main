@@ -26,8 +26,7 @@
 static driver::Motor3508* flywheel_left = nullptr;
 static driver::Motor3508* flywheel_right = nullptr;
 
-//driver::MotorCANBase* steering_motor = nullptr;
-driver::Motor2006* steering_motor = nullptr;
+driver::MotorCANBase* steering_motor = nullptr;
 
 bsp::GPIO* shoot_key = nullptr;
 
@@ -103,46 +102,35 @@ void jam_callback(void* args) {
     }
 }
 
+void steering_stop(){
+    steering_motor->SetTarget(0);
+    steering_motor->Hold(true);
+}
+
+void Steering_IDLE(){
+    steering_motor->SetTarget(4 * PI / 8, false);
+    osDelay(10);
+}
+
+void Steering_SINGLE(){
+    int last_steering_target = steering_motor->GetTheta();
+    steering_motor->SetTarget(PI, false);
+    while (true){
+        if(last_steering_target != steering_motor->GetTheta()){
+            break;
+        } else {
+            osDelay(SHOOT_OS_DELAY);
+        }
+    }
+    steering_motor->Hold(true);
+    shoot_load_mode = SHOOT_MODE_IDLE;
+}
+
+void Stering_BURST(){
+    steering_motor->SetTarget(steering_motor->GetTarget() + 2 * PI / 8, false);
+    osDelay(10);
+}
 osThreadId_t shootTaskHandle;
-
-/**
-     * @brief 自动卸载弹药函数
-     *
-     * 此函数用于根据裁判系统的射击数据和电机的输出轴角速度，自动调整转向电机的目标角度，以实现弹药的自动卸载。
-     *
-     * 首先，检查裁判系统的射击数据中是否设置了锁定转子时间的标志（htim_sign）。
-     * 如果未设置（即htim_sign为false），则记录当前时间（HAL_GetTick()）作为锁定转子时间，并将htim_sign设置为true。
-     *
-     * 接着，检查电机的输出轴角速度（GetOutputShaftOmega()）与裁判系统射击数据中的锁定转子角度（locked_rotor_angle）之差是否大于π/36（2 * PI / 72）。
-     * 同时，确保htim_sign为true，并且从锁定转子时间到现在的时间差（以秒为单位）大于5秒。
-     * 如果以上条件都满足，则调整转向电机的目标角度（SetTarget），将其减小π/36，并将htim_sign设置为false。
-     *
-     * 注意：此函数依赖于外部定义的referee和steering_motor对象，以及它们的成员函数。
-     * HAL_GetTick()函数用于获取自系统启动以来的毫秒数。
- */
-void auto_unload_ammunition(){
-
-    if(referee->shoot_data.htim_sign == false) {
-//        referee->shoot_data.locked_rotor_time = HAL_GetTick();
-        referee->shoot_data.htim_sign = true;
-    }
-    if(steering_motor->GetOutputShaftOmega() - referee->shoot_data.locked_rotor_angle > 2 * PI / 72 && referee->shoot_data.htim_sign == true && (HAL_GetTick() - referee->shoot_data.locked_rotor_time)/1000.0f > 5){
-        steering_motor->SetTarget(steering_motor->GetTarget() - 2 * PI / 72, false);
-        referee->shoot_data.htim_sign = false;
-    }
-}
-void auto_unload_ammunition_new(){
-    if(referee->shoot_data.htim_sign == false) {
-        referee ->shoot_data.locked_rotor_time = bsp::GetHighresTickMicroSec();
-        referee->shoot_data.htim_sign = true;
-        shoot_load_mode = SHOOT_MODE_UNLOAD;
-    }
-    if(steering_motor->GetOutputShaftOmega() - referee->shoot_data.locked_rotor_angle > 2 * PI / 72 && referee->shoot_data.htim_sign == true && (HAL_GetTick() - referee->shoot_data.locked_rotor_time)/1000.0f > 5){
-        steering_motor->SetTarget(steering_motor->GetTarget() - 2 * PI / 72, false);
-        referee->shoot_data.htim_sign = false;
-        shoot_load_mode = SHOOT_MODE_IDLE;
-    }
-}
 
 void shootTask(void* arg) {
     UNUSED(arg);
@@ -159,7 +147,6 @@ void shootTask(void* arg) {
     steering_motor->SetTarget(steering_motor->GetOutputShaftTheta());
 
     Ease* flywheel_speed_ease = new Ease(0, 0.3);
-
     while (true) {
 
         // if (remote_mode == REMOTE_MODE_KILL ||
@@ -174,75 +161,52 @@ void shootTask(void* arg) {
         if (shoot_flywheel_mode == SHOOT_FRIC_MODE_PREPARING ||
             shoot_flywheel_mode == SHOOT_FRIC_MODE_PREPARED) {
             // 启动摩擦轮电机(旋转)
-            flywheel_speed_ease->SetTarget(1);  // 摩擦轮转速(转速控制)
+            flywheel_speed_ease->SetTarget(5);  // 摩擦轮转速(转速控制)
         } else {
             // 关闭摩擦轮电机(停止旋转)
             flywheel_speed_ease->SetTarget(0);    // 摩擦轮转速(转速控制)
+            shoot_load_mode = SHOOT_MODE_STOP;
         }
+
         flywheel_speed_ease->Calc();
         flywheel_left->SetTarget(flywheel_speed_ease->GetOutput());
         flywheel_right->SetTarget(-flywheel_speed_ease->GetOutput());
 
         // 检测摩擦轮是否就绪
         // 由shoot_task切换到SHOOT_FRIC_MODE_PREPARED
-        print("shoot_flywheel_mode: %d\n", shoot_flywheel_mode);
         if (shoot_flywheel_mode == SHOOT_FRIC_MODE_PREPARING && flywheel_speed_ease->IsAtTarget()) {
             shoot_flywheel_mode = SHOOT_FRIC_MODE_PREPARED;
         }
 
-        if (shoot_flywheel_mode != SHOOT_FRIC_MODE_PREPARED) {
-            steering_motor->SetTarget(steering_motor->GetOutputShaftTheta());
-            osDelay(SHOOT_OS_DELAY);
-            continue;
-        }
         /* 摩擦轮就绪后执行以下部分 */
 
         if (shoot_load_mode == SHOOT_MODE_STOP) {
-            steering_motor->Hold();
-            // todo: 这里为什么要是true才能停下？target_angel为什么会超过范围？
-        }
-        if (shoot_load_mode == SHOOT_MODE_IDLE) {
-            uint8_t loaded = shoot_key->Read();
-            if (loaded) {
-                steering_motor->Hold(true);
-            } else {
-                // 没有准备就绪，则旋转拔弹电机
-                referee->shoot_data.locked_rotor_angle = steering_motor->GetOutputShaftOmega();
-                print("locked_rotor_angle: %d\n", referee->shoot_data.locked_rotor_angle);
-                steering_motor->SetTarget(steering_motor->GetTarget() + 2 * PI / 8, false);
-                auto_unload_ammunition_new();
-            }
+            steering_stop();
         }
 
-        int heat_limit = referee->game_robot_status.shooter_heat_limit;
-        int heat_buffer = referee->power_heat_data.shooter_id1_17mm_cooling_heat;
-        const int shooter_heat_threashold = 25;
-        if (heat_buffer > heat_limit - shooter_heat_threashold) {
-            // 临时解决方案
-            steering_motor->Hold();
-            print("overheat!\n");
-            osDelay(SHOOT_OS_DELAY);
-            continue;
+        if (shoot_load_mode == SHOOT_MODE_IDLE){
+            steering_stop();
         }
-        UNUSED(heat_limit);
-        UNUSED(heat_buffer);
+
+//                 todo 临时解决方案
+//        int heat_limit = referee->game_robot_status.shooter_heat_limit;
+//        int heat_buffer = referee->power_heat_data.shooter_id1_17mm_cooling_heat;
+//        const int shooter_heat_threashold = 50000;
+//        if (heat_buffer > heat_limit - shooter_heat_threashold) {
+//            steering_stop();
+//            print("overheat!\n");
+//            osDelay(SHOOT_OS_DELAY);
+//            continue;
+//        }
+//        UNUSED(heat_limit);
+//        UNUSED(heat_buffer);
 
         if (shoot_load_mode == SHOOT_MODE_SINGLE) {
-            referee->shoot_data.locked_rotor_angle = steering_motor->GetOutputShaftOmega();
-            print("locked_rotor_angle: %d\n", referee->shoot_data.locked_rotor_angle);
-            steering_motor->SetTarget(steering_motor->GetOutputShaftTheta() + 2 * PI / 8, true);
-            auto_unload_ammunition_new();
-            uint8_t loaded = shoot_key->Read();
-            // 等到这一粒子弹发射出去再变成IDLE，否则会因为当前有子弹而直接锁定造成无法发射子弹
-            if (!loaded) {
-                shoot_load_mode = SHOOT_MODE_IDLE;
-            }
+            Steering_SINGLE();
         }
+
         if (shoot_load_mode == SHOOT_MODE_BURST) {
-            referee->shoot_data.locked_rotor_angle = steering_motor->GetOutputShaftOmega();
-            print("locked_rotor_angle: %d\n", referee->shoot_data.locked_rotor_angle);
-            steering_motor->SetTarget(steering_motor->GetTarget() + 2 * PI / 8, true);
-            auto_unload_ammunition_new();
+            Stering_BURST();
         }
 
         osDelay(SHOOT_OS_DELAY);
@@ -250,18 +214,14 @@ void shootTask(void* arg) {
 }
 
 void init_shoot() {
-//    flywheel_left = new driver::MotorPWMBase(&htim1, 1, 1000000, 500, 1000);
-//    flywheel_right = new driver::MotorPWMBase(&htim1, 4, 1000000, 500, 1000);
-//    flywheel_left->SetOutput(0);
-//    flywheel_right->SetOutput(0);
 
-    flywheel_left = new driver::Motor3508(can2, 0x201);
+    flywheel_left = new driver::Motor3508(can2, 0x203);
     flywheel_right = new driver::Motor3508(can2, 0x202);
-    steering_motor = new driver::Motor2006(can2, 0x203);
+    steering_motor = new driver::Motor2006(can2, 0x204);
 
     flywheel_left->SetTransmissionRatio(36);
     flywheel_right->SetTransmissionRatio(36);
-    steering_motor->SetTransmissionRatio(36);
+    steering_motor->SetTransmissionRatio(19);
     control::ConstrainedPID::PID_Init_t steering_motor_theta_pid_init = {
         .kp = 20,
         .ki = 0,
@@ -295,9 +255,8 @@ void init_shoot() {
 
     };
     steering_motor->ReInitPID(steering_motor_omega_pid_init, driver::MotorCANBase::OMEGA);
-    steering_motor->SetMode(driver::MotorCANBase::THETA | driver::MotorCANBase::OMEGA);
+    steering_motor->SetMode(driver::MotorCANBase::OMEGA);
     steering_motor->RegisterErrorCallback(jam_callback, steering_motor);
-//    steering_motor->RegisterErrorCallback(jam_callback, steering_motor);
 
     flywheel_left->ReInitPID(flywheel_pid_init, driver::MotorCANBase::OMEGA);
     flywheel_left->SetMode(driver::MotorCANBase::OMEGA);

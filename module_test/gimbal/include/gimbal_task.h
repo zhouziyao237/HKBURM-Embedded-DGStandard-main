@@ -42,8 +42,6 @@ const osThreadAttr_t gimbalTaskAttribute = {.name = "gimbalTask",
                                             .priority = (osPriority_t)osPriorityHigh,
                                             .tz_module = 0,
                                             .reserved = 0};
-void debug_gimbal_init();
-void debug_gimbal();
 void gimbalTask(void* arg);
 extern control::Gimbal* gimbal;
 extern driver::MotorCANBase* pitch_motor;
@@ -54,4 +52,6 @@ extern INS_Angle_t INS_Angle;
 void init_gimbal();
 void kill_gimbal();
 
+void debug_gimbal_init();
 void debug_gimbal(bool newline = false);
+void gimbal_TargeRel(float rel_pitch, float rel_yaw, bool buffer_mode = false);

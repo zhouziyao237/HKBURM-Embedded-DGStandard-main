@@ -60,6 +60,9 @@ void RM_Car_main_remote_mode(){
         case REMOTE_MODE_SPIN:
             strcpy(s, "SPIN");
             break;
+        case REMOTE_MODE_ADVANCED:
+            strcpy(s, "ADVANCED");
+            break;
         case REMOTE_MODE_SITCK_SHIFT_GIMBAL:
             strcpy(s, "STICK_SHIFT");
             break;
