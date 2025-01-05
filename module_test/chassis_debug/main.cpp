@@ -25,7 +25,7 @@
 #include "cmsis_os.h"
 #include "dbus.h"
 
-bsp::CAN* can = nullptr;
+bsp::CAN* can2 = nullptr;
 driver::MotorCANBase* fl_motor = nullptr;
 driver::MotorCANBase* fr_motor = nullptr;
 driver::MotorCANBase* bl_motor = nullptr;
@@ -36,12 +36,12 @@ remote::DBUS* dbus = nullptr;
 
 void RM_RTOS_Init() {
     HAL_Delay(200);
-    print_use_uart(&huart8);
-    can = new bsp::CAN(&hcan2, false);
-    fl_motor = new driver::Motor3508(can, 0x202);
-    fr_motor = new driver::Motor3508(can, 0x201);
-    bl_motor = new driver::Motor3508(can, 0x204);
-    br_motor = new driver::Motor3508(can, 0x203);
+    print_use_uart(&huart1, true, 115200);
+    can2 = new bsp::CAN(&hcan2, false);
+    fl_motor = new driver::Motor3508(can2, 0x201);
+    fr_motor = new driver::Motor3508(can2, 0x204);
+    bl_motor = new driver::Motor3508(can2, 0x202);
+    br_motor = new driver::Motor3508(can2, 0x203);
 
     control::ConstrainedPID::PID_Init_t omega_pid_init = {
         .kp = 2500,
@@ -89,7 +89,7 @@ void RM_RTOS_Init() {
 
     print("Chassis init success\r\n");
 
-    dbus = new remote::DBUS(&huart1);
+    dbus = new remote::DBUS(&huart3);
     HAL_Delay(300);
 }
 
@@ -99,6 +99,7 @@ void RM_RTOS_Default_Task(const void* args) {
     osDelay(500);  // DBUS initialization needs time
 
     while (true) {
+        print("DBUS: %d");
         const float ratio = 1.0f / 660.0f * 6 * PI;
 //        chassis_main->SetSpeed((dbus->ch0 * 0.1) * ratio, (dbus->ch1 * 0.1) * ratio, (dbus->ch2 * 0.1) * ratio);
         chassis->SetSpeed(dbus->ch0 * ratio, dbus->ch1 * ratio, dbus->ch2 * ratio);

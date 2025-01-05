@@ -47,7 +47,7 @@ namespace bsp {
          */
         I2C(i2c_init_t init);
         /**
-         * @brief check if it is associated with a given CAN handle
+         * @brief check if it is associated with a given CAN handleRead_Register
          *
          * @param hi2c  HAL can handle to be checked
          *

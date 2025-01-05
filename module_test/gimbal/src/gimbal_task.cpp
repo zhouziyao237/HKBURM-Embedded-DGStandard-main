@@ -35,6 +35,17 @@ INS_Angle_t INS_Angle;
 
 control::gimbal_t gimbal_data;
 
+bool LAST_REMOTE_MODE = false;
+
+//void gimbal_TargeRel(float rel_pitch, float rel_yaw, bool buffer_mode){
+//
+//}
+
+template <typename T>
+T map(T value, T in_min, T in_max, T out_min, T out_max) {
+    return out_min + (value - in_min) * (out_max - out_min) / (in_max - in_min);
+}
+
 void debug_gimbal_init(){
     if(CAR_DEBUG->RM_Debug_mode.gimbal_debug_mode == Debug_true) {
         print("GIMBAL_INIT_OK\n");
@@ -171,16 +182,18 @@ void gimbalTask(void* arg) {
                                       -minipc->target_angle.target_yaw);
                     gimbal->UpdateIMU(INS_Angle.pitch, INS_Angle.yaw);
                     break;
+                case REMOTE_MODE_SITCK_SHIFT_GIMBAL:
+                    // 遥控器手动控制模式，将电机获取的云台当前角度作为参考系，直接通过遥控控制
+
+                    gimbal->TargetRel(pitch_diff, yaw_diff);
+                    print("pitch_motor: %.2f pitch_diff: %.2f\r\n", map<float>(pitch_motor->GetTheta(), 0, 2 * PI, -PI, PI));
+                    gimbal->Update();
+                    break;
+
                 default:
                     break;
             }
 
-            if (remote_mode == REMOTE_MODE_SITCK_SHIFT_GIMBAL){
-                // 遥控器手动控制模式，将电机获取的云台当前角度作为参考系，直接通过遥控控制
-                gimbal->TargetRel(pitch_diff, yaw_diff);
-                gimbal->Update();
-                break;
-            }
         }
 
         osDelay(GIMBAL_OS_DELAY);
@@ -286,11 +299,9 @@ void check_kill() {
     if (remote_mode == REMOTE_MODE_KILL) {
         yaw_motor->Disable();
         pitch_motor->Disable();
-        steering_motor->Disable();
         while (remote_mode == REMOTE_MODE_KILL)
             osDelay(1);
     }
     yaw_motor->Enable();
     pitch_motor->Enable();
-    steering_motor->Enable();
 }

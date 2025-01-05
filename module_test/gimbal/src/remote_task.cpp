@@ -26,7 +26,7 @@
 #include "imu_task.h"
 
 remote::DBUS* dbus = nullptr;
-RemoteMode remote_mode = REMOTE_MODE_FOLLOW;
+RemoteMode remote_mode = REMOTE_MODE_ADVANCED;
 RemoteMode last_remote_mode = REMOTE_MODE_FOLLOW;
 RemoteMode available_remote_mode[] = {REMOTE_MODE_FOLLOW, REMOTE_MODE_SPIN, REMOTE_MODE_ADVANCED,
                                       REMOTE_MODE_AUTOAIM};
@@ -185,7 +185,7 @@ void remoteTask(void* arg) {
             static BoolEdgeDetector* shoot_switch_edge = new BoolEdgeDetector(false);
             shoot_switch_edge->input(state_l == remote::DOWN);
 
-            if (shoot_switch_edge->posEdge() || mouse_left_edge->posEdge()) {
+            if (shoot_switch_edge->posEdge() || mouse_left_edge->posEdge() || mouse.r) {
                 shoot_load_mode = SHOOT_MODE_SINGLE;
                 shoot_burst_timestamp = 0;
             }

@@ -144,7 +144,7 @@ void chassisTask(void* arg) {
         if (remote_mode == REMOTE_MODE_SITCK_SHIFT_CHASSIS) {
             // 手动模式下，遥控器直接控制底盘速度
             print("SITCK_SHIFT_CHASSIS: vx: %.2f, vy: %.2f, vt: %.2f\n", car_vx, car_vy, car_vt);
-            const float ratio = 1.0f / 660.0f * 6 * PI;
+            const float ratio = 1.0f / 660.0f * 50 * PI;
             chassis_vx = car_vx * ratio;
             chassis_vy = car_vy * ratio;
             chassis_vt = car_vt * ratio;
