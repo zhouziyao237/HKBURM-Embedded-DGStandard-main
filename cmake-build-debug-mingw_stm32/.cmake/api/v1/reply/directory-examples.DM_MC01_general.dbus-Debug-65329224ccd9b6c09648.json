@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "examples/DM_MC01_general/dbus",
+		"source" : "examples/DM_MC01_general/dbus"
+	}
+}

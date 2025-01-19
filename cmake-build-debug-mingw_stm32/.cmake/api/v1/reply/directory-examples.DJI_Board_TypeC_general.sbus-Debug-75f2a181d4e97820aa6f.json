@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "examples/DJI_Board_TypeC_general/sbus",
+		"source" : "examples/DJI_Board_TypeC_general/sbus"
+	}
+}

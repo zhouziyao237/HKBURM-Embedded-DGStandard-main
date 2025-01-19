@@ -32,6 +32,8 @@ bsp::GPIO* shoot_key = nullptr;
 
 bool jam_notify_flags = false;
 
+int shooter_17mm_num = 0;
+
 control::ConstrainedPID::PID_Init_t steering_motor_theta_normal_pid_init = {
     .kp = 20,
     .ki = 0,
@@ -114,7 +116,9 @@ void Steering_IDLE(){
 
 void Steering_SINGLE(){
     int last_steering_target = steering_motor->GetTheta();
-    steering_motor->SetTarget(PI, false);
+    steering_motor->SetTarget(2 * PI, false);
+    shooter_17mm_num ++;
+//    steering_motor->SetTarget(PI, false);
     while (true){
         if(last_steering_target != steering_motor->GetTheta()){
             break;
@@ -127,7 +131,11 @@ void Steering_SINGLE(){
 }
 
 void Stering_BURST(){
+    int last_steering_target = steering_motor->GetTheta();
     steering_motor->SetTarget(steering_motor->GetTarget() + 2 * PI / 8, false);
+    if(last_steering_target != steering_motor->GetTheta()){
+        shooter_17mm_num ++;
+    }
     osDelay(10);
 }
 osThreadId_t shootTaskHandle;
@@ -277,6 +285,7 @@ void init_shoot() {
     // laser = new bsp::Laser(&htim3, 3, 1000000);
 }
 void kill_shoot() {
+    shooter_17mm_num = 0;
     steering_motor->SetTarget(0);
     flywheel_left->SetTarget(0);
     flywheel_right->SetTarget(0);

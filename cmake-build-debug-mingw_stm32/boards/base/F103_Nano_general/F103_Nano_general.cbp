@@ -1,0 +1,1416 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="F103_Nano_general"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\module_test\;CMake Files\module_test\chassis_debug\;CMake Files\module_test\gimbal\;CMake Files\module_test\sensor_test\;CMake Files\module_test\sensor_test\MPU6050_test\;CMake Files\module_test\chassis_main\;CMake Files\programs\;CMake Files\programs\DGStandard\;CMake Files\programs\DGStandard\chassis\;CMake Files\programs\DGStandard\gimbal\;CMake Files\boards\;CMake Files\boards\base\;CMake Files\boards\base\DJI_Board_TypeA_general\;CMake Files\boards\base\DJI_Board_TypeC_general\;CMake Files\boards\base\DM_MC01_general\;CMake Files\boards\base\DM_MC02_general\;CMake Files\boards\base\F103_Nano_general\;CMake Files\boards\platform\;CMake Files\boards\platform\stm32f1\;CMake Files\boards\platform\stm32f4\;CMake Files\boards\platform\stm32h7\;CMake Files\boards\algorithm\;CMake Files\boards\drivers\;CMake Files\boards\components\;CMake Files\boards\third_party\;CMake Files\examples\;CMake Files\examples\DJI_Board_TypeA_general\;CMake Files\examples\DJI_Board_TypeA_general\MPU6500\;CMake Files\examples\DJI_Board_TypeA_general\buzzer\;CMake Files\examples\DJI_Board_TypeA_general\can_bridge\;CMake Files\examples\DJI_Board_TypeA_general\chassis\;CMake Files\examples\DJI_Board_TypeA_general\dbus\;CMake Files\examples\DJI_Board_TypeA_general\fatfs\;CMake Files\examples\DJI_Board_TypeA_general\gimbal\;CMake Files\examples\DJI_Board_TypeA_general\led_flow\;CMake Files\examples\DJI_Board_TypeA_general\motor\;CMake Files\examples\DJI_Board_TypeA_general\referee\;CMake Files\examples\DJI_Board_TypeA_general\witimu\;CMake Files\examples\DJI_Board_TypeC_general\;CMake Files\examples\DJI_Board_TypeC_general\BMI088\;CMake Files\examples\DJI_Board_TypeC_general\buzzer\;CMake Files\examples\DJI_Board_TypeC_general\can_bridge\;CMake Files\examples\DJI_Board_TypeC_general\chassis\;CMake Files\examples\DJI_Board_TypeC_general\cybergear\;CMake Files\examples\DJI_Board_TypeC_general\dbus\;CMake Files\examples\DJI_Board_TypeC_general\gimbal\;CMake Files\examples\DJI_Board_TypeC_general\imu\;CMake Files\examples\DJI_Board_TypeC_general\ist8310\;CMake Files\examples\DJI_Board_TypeC_general\key\;CMake Files\examples\DJI_Board_TypeC_general\led\;CMake Files\examples\DJI_Board_TypeC_general\motor\;CMake Files\examples\DJI_Board_TypeC_general\oled\;CMake Files\examples\DJI_Board_TypeC_general\onboard_temp\;CMake Files\examples\DJI_Board_TypeC_general\referee\;CMake Files\examples\DJI_Board_TypeC_general\sbus\;CMake Files\examples\DJI_Board_TypeC_general\supercap\;CMake Files\examples\DJI_Board_TypeC_general\usb\;CMake Files\examples\DJI_Board_TypeC_general\witimu\;CMake Files\examples\DM_MC01_general\;CMake Files\examples\DM_MC01_general\BMI088\;CMake Files\examples\DM_MC01_general\buzzer\;CMake Files\examples\DM_MC01_general\can_bridge\;CMake Files\examples\DM_MC01_general\chassis\;CMake Files\examples\DM_MC01_general\dbus\;CMake Files\examples\DM_MC01_general\led\;CMake Files\examples\DM_MC01_general\motor\;CMake Files\examples\DM_MC01_general\onboard_temp\;CMake Files\examples\DM_MC02_general\;CMake Files\examples\DM_MC02_general\BMI088\;CMake Files\examples\DM_MC02_general\buzzer\;CMake Files\examples\DM_MC02_general\can_bridge\;CMake Files\examples\DM_MC02_general\dbus\;CMake Files\examples\DM_MC02_general\led\;CMake Files\examples\DM_MC02_general\motor\;CMake Files\examples\DM_MC02_general\uart\;CMake Files\examples\F103_Nano_general\;CMake Files\examples\F103_Nano_general\buzzer\;CMake Files\examples\F103_Nano_general\led\;CMake Files\examples\F103_Nano_general\motor\;CMake Files\examples\F103_Nano_general\oled\;CMake Files\cmake\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/base/F103_Nano_general"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/base/F103_Nano_general/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="D:/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/base/F103_Nano_general/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/base/F103_Nano_general/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/base/F103_Nano_general/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="F103_Nano_general_libDSP">
+				<Option output="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/base/F103_Nano_general/libF103_Nano_general_libDSP.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/base/F103_Nano_general"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D__FPU_PRESENT"/>
+					<Add option="-DSTM32F103xB"/>
+					<Add option="-DARM_MATH_CM3"/>
+					<Add option="-DNO_IMU"/>
+					<Add option="-DNO_ONBOARD_SENSOR"/>
+					<Add option="-DNO_USB"/>
+					<Add option="-DF103_Nano"/>
+					<Add option="-DUSE_HAL_DRIVER"/>
+					<Add directory="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/Core/Inc"/>
+					<Add directory="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/USB_DEVICE/App"/>
+					<Add directory="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/USB_DEVICE/Target"/>
+					<Add directory="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/Drivers/STM32F1xx_HAL_Driver/Inc"/>
+					<Add directory="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy"/>
+					<Add directory="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/Drivers/CMSIS/Include"/>
+					<Add directory="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/Drivers/CMSIS/Device/ST/STM32F1xx/Include"/>
+					<Add directory="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Include"/>
+					<Add directory="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc"/>
+					<Add directory="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/Middlewares/ST/STM32_USB_Device_Library/Core/Inc"/>
+					<Add directory="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/Middlewares/Third_Party/FatFs/src"/>
+					<Add directory="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/Middlewares/Third_Party/FreeRTOS/Source/include"/>
+					<Add directory="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2"/>
+					<Add directory="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3"/>
+					<Add directory="d:\stm32_cmake\gcc-arm-none-eabi-10-2020-q4-major\bin\../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/include/c++/10.2.1"/>
+					<Add directory="d:\stm32_cmake\gcc-arm-none-eabi-10-2020-q4-major\bin\../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/include/c++/10.2.1/arm-none-eabi"/>
+					<Add directory="d:\stm32_cmake\gcc-arm-none-eabi-10-2020-q4-major\bin\../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/include/c++/10.2.1/backward"/>
+					<Add directory="d:\stm32_cmake\gcc-arm-none-eabi-10-2020-q4-major\bin\../lib/gcc/arm-none-eabi/10.2.1/include"/>
+					<Add directory="d:\stm32_cmake\gcc-arm-none-eabi-10-2020-q4-major\bin\../lib/gcc/arm-none-eabi/10.2.1/include-fixed"/>
+					<Add directory="d:\stm32_cmake\gcc-arm-none-eabi-10-2020-q4-major\bin\../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/base/F103_Nano_general/Makefile&quot;  VERBOSE=1 F103_Nano_general_libDSP"/>
+					<CompileFile command="D:/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/base/F103_Nano_general/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/base/F103_Nano_general/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/base/F103_Nano_general/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="F103_Nano_general_libDSP/fast">
+				<Option output="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/base/F103_Nano_general/libF103_Nano_general_libDSP.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/base/F103_Nano_general"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D__FPU_PRESENT"/>
+					<Add option="-DSTM32F103xB"/>
+					<Add option="-DARM_MATH_CM3"/>
+					<Add option="-DNO_IMU"/>
+					<Add option="-DNO_ONBOARD_SENSOR"/>
+					<Add option="-DNO_USB"/>
+					<Add option="-DF103_Nano"/>
+					<Add option="-DUSE_HAL_DRIVER"/>
+					<Add directory="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/Core/Inc"/>
+					<Add directory="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/USB_DEVICE/App"/>
+					<Add directory="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/USB_DEVICE/Target"/>
+					<Add directory="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/Drivers/STM32F1xx_HAL_Driver/Inc"/>
+					<Add directory="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy"/>
+					<Add directory="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/Drivers/CMSIS/Include"/>
+					<Add directory="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/Drivers/CMSIS/Device/ST/STM32F1xx/Include"/>
+					<Add directory="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Include"/>
+					<Add directory="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc"/>
+					<Add directory="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/Middlewares/ST/STM32_USB_Device_Library/Core/Inc"/>
+					<Add directory="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/Middlewares/Third_Party/FatFs/src"/>
+					<Add directory="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/Middlewares/Third_Party/FreeRTOS/Source/include"/>
+					<Add directory="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2"/>
+					<Add directory="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3"/>
+					<Add directory="d:\stm32_cmake\gcc-arm-none-eabi-10-2020-q4-major\bin\../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/include/c++/10.2.1"/>
+					<Add directory="d:\stm32_cmake\gcc-arm-none-eabi-10-2020-q4-major\bin\../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/include/c++/10.2.1/arm-none-eabi"/>
+					<Add directory="d:\stm32_cmake\gcc-arm-none-eabi-10-2020-q4-major\bin\../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/include/c++/10.2.1/backward"/>
+					<Add directory="d:\stm32_cmake\gcc-arm-none-eabi-10-2020-q4-major\bin\../lib/gcc/arm-none-eabi/10.2.1/include"/>
+					<Add directory="d:\stm32_cmake\gcc-arm-none-eabi-10-2020-q4-major\bin\../lib/gcc/arm-none-eabi/10.2.1/include-fixed"/>
+					<Add directory="d:\stm32_cmake\gcc-arm-none-eabi-10-2020-q4-major\bin\../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/base/F103_Nano_general/Makefile&quot;  VERBOSE=1 F103_Nano_general_libDSP/fast"/>
+					<CompileFile command="D:/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/base/F103_Nano_general/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/base/F103_Nano_general/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/base/F103_Nano_general/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="F103_Nano_general">
+				<Option output="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/base/F103_Nano_general/CMakeFiles/F103_Nano_general.dir/F103_Nano_general.objlib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/base/F103_Nano_general"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DSTM32F103xB"/>
+					<Add option="-DARM_MATH_CM3"/>
+					<Add option="-DNO_IMU"/>
+					<Add option="-DNO_ONBOARD_SENSOR"/>
+					<Add option="-DNO_USB"/>
+					<Add option="-DF103_Nano"/>
+					<Add option="-DUSE_HAL_DRIVER"/>
+					<Add directory="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/Core/Inc"/>
+					<Add directory="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/USB_DEVICE/App"/>
+					<Add directory="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/USB_DEVICE/Target"/>
+					<Add directory="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/Drivers/STM32F1xx_HAL_Driver/Inc"/>
+					<Add directory="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy"/>
+					<Add directory="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/Drivers/CMSIS/Include"/>
+					<Add directory="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/Drivers/CMSIS/Device/ST/STM32F1xx/Include"/>
+					<Add directory="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Include"/>
+					<Add directory="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc"/>
+					<Add directory="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/Middlewares/ST/STM32_USB_Device_Library/Core/Inc"/>
+					<Add directory="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/Middlewares/Third_Party/FatFs/src"/>
+					<Add directory="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/Middlewares/Third_Party/FreeRTOS/Source/include"/>
+					<Add directory="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2"/>
+					<Add directory="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3"/>
+					<Add directory="d:\stm32_cmake\gcc-arm-none-eabi-10-2020-q4-major\bin\../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/include/c++/10.2.1"/>
+					<Add directory="d:\stm32_cmake\gcc-arm-none-eabi-10-2020-q4-major\bin\../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/include/c++/10.2.1/arm-none-eabi"/>
+					<Add directory="d:\stm32_cmake\gcc-arm-none-eabi-10-2020-q4-major\bin\../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/include/c++/10.2.1/backward"/>
+					<Add directory="d:\stm32_cmake\gcc-arm-none-eabi-10-2020-q4-major\bin\../lib/gcc/arm-none-eabi/10.2.1/include"/>
+					<Add directory="d:\stm32_cmake\gcc-arm-none-eabi-10-2020-q4-major\bin\../lib/gcc/arm-none-eabi/10.2.1/include-fixed"/>
+					<Add directory="d:\stm32_cmake\gcc-arm-none-eabi-10-2020-q4-major\bin\../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/base/F103_Nano_general/Makefile&quot;  VERBOSE=1 F103_Nano_general"/>
+					<CompileFile command="D:/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/base/F103_Nano_general/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/base/F103_Nano_general/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/base/F103_Nano_general/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="F103_Nano_general/fast">
+				<Option output="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/base/F103_Nano_general/CMakeFiles/F103_Nano_general.dir/F103_Nano_general.objlib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/base/F103_Nano_general"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DSTM32F103xB"/>
+					<Add option="-DARM_MATH_CM3"/>
+					<Add option="-DNO_IMU"/>
+					<Add option="-DNO_ONBOARD_SENSOR"/>
+					<Add option="-DNO_USB"/>
+					<Add option="-DF103_Nano"/>
+					<Add option="-DUSE_HAL_DRIVER"/>
+					<Add directory="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/Core/Inc"/>
+					<Add directory="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/USB_DEVICE/App"/>
+					<Add directory="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/USB_DEVICE/Target"/>
+					<Add directory="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/Drivers/STM32F1xx_HAL_Driver/Inc"/>
+					<Add directory="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy"/>
+					<Add directory="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/Drivers/CMSIS/Include"/>
+					<Add directory="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/Drivers/CMSIS/Device/ST/STM32F1xx/Include"/>
+					<Add directory="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Include"/>
+					<Add directory="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc"/>
+					<Add directory="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/Middlewares/ST/STM32_USB_Device_Library/Core/Inc"/>
+					<Add directory="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/Middlewares/Third_Party/FatFs/src"/>
+					<Add directory="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/Middlewares/Third_Party/FreeRTOS/Source/include"/>
+					<Add directory="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2"/>
+					<Add directory="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3"/>
+					<Add directory="d:\stm32_cmake\gcc-arm-none-eabi-10-2020-q4-major\bin\../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/include/c++/10.2.1"/>
+					<Add directory="d:\stm32_cmake\gcc-arm-none-eabi-10-2020-q4-major\bin\../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/include/c++/10.2.1/arm-none-eabi"/>
+					<Add directory="d:\stm32_cmake\gcc-arm-none-eabi-10-2020-q4-major\bin\../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/include/c++/10.2.1/backward"/>
+					<Add directory="d:\stm32_cmake\gcc-arm-none-eabi-10-2020-q4-major\bin\../lib/gcc/arm-none-eabi/10.2.1/include"/>
+					<Add directory="d:\stm32_cmake\gcc-arm-none-eabi-10-2020-q4-major\bin\../lib/gcc/arm-none-eabi/10.2.1/include-fixed"/>
+					<Add directory="d:\stm32_cmake\gcc-arm-none-eabi-10-2020-q4-major\bin\../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/base/F103_Nano_general/Makefile&quot;  VERBOSE=1 F103_Nano_general/fast"/>
+					<CompileFile command="D:/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/base/F103_Nano_general/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/base/F103_Nano_general/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/base/F103_Nano_general/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/Core/Src/adc.c">
+			<Option target="F103_Nano_general"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/Core/Src/can.c">
+			<Option target="F103_Nano_general"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/Core/Src/crc.c">
+			<Option target="F103_Nano_general"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/Core/Src/dma.c">
+			<Option target="F103_Nano_general"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/Core/Src/freertos.c">
+			<Option target="F103_Nano_general"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/Core/Src/gpio.c">
+			<Option target="F103_Nano_general"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/Core/Src/i2c.c">
+			<Option target="F103_Nano_general"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/Core/Src/main.c">
+			<Option target="F103_Nano_general"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/Core/Src/rtc.c">
+			<Option target="F103_Nano_general"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/Core/Src/spi.c">
+			<Option target="F103_Nano_general"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/Core/Src/stm32f1xx_hal_msp.c">
+			<Option target="F103_Nano_general"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/Core/Src/stm32f1xx_hal_timebase_tim.c">
+			<Option target="F103_Nano_general"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/Core/Src/stm32f1xx_it.c">
+			<Option target="F103_Nano_general"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/Core/Src/syscalls.c">
+			<Option target="F103_Nano_general"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/Core/Src/sysmem.c">
+			<Option target="F103_Nano_general"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/Core/Src/system_stm32f1xx.c">
+			<Option target="F103_Nano_general"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/Core/Src/tim.c">
+			<Option target="F103_Nano_general"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/Core/Src/usart.c">
+			<Option target="F103_Nano_general"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/BasicMathFunctions/arm_abs_f32.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/BasicMathFunctions/arm_abs_q15.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/BasicMathFunctions/arm_abs_q31.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/BasicMathFunctions/arm_abs_q7.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/BasicMathFunctions/arm_add_f32.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/BasicMathFunctions/arm_add_q15.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/BasicMathFunctions/arm_add_q31.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/BasicMathFunctions/arm_add_q7.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/BasicMathFunctions/arm_dot_prod_f32.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/BasicMathFunctions/arm_dot_prod_q15.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/BasicMathFunctions/arm_dot_prod_q31.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/BasicMathFunctions/arm_dot_prod_q7.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/BasicMathFunctions/arm_mult_f32.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/BasicMathFunctions/arm_mult_q15.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/BasicMathFunctions/arm_mult_q31.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/BasicMathFunctions/arm_mult_q7.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/BasicMathFunctions/arm_negate_f32.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/BasicMathFunctions/arm_negate_q15.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/BasicMathFunctions/arm_negate_q31.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/BasicMathFunctions/arm_negate_q7.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/BasicMathFunctions/arm_offset_f32.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/BasicMathFunctions/arm_offset_q15.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/BasicMathFunctions/arm_offset_q31.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/BasicMathFunctions/arm_offset_q7.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/BasicMathFunctions/arm_scale_f32.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/BasicMathFunctions/arm_scale_q15.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/BasicMathFunctions/arm_scale_q31.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/BasicMathFunctions/arm_scale_q7.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/BasicMathFunctions/arm_shift_q15.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/BasicMathFunctions/arm_shift_q31.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/BasicMathFunctions/arm_shift_q7.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/BasicMathFunctions/arm_sub_f32.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/BasicMathFunctions/arm_sub_q15.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/BasicMathFunctions/arm_sub_q31.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/BasicMathFunctions/arm_sub_q7.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/CommonTables/arm_common_tables.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/CommonTables/arm_const_structs.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/ComplexMathFunctions/arm_cmplx_conj_f32.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/ComplexMathFunctions/arm_cmplx_conj_q15.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/ComplexMathFunctions/arm_cmplx_conj_q31.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/ComplexMathFunctions/arm_cmplx_dot_prod_f32.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/ComplexMathFunctions/arm_cmplx_dot_prod_q15.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/ComplexMathFunctions/arm_cmplx_dot_prod_q31.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/ComplexMathFunctions/arm_cmplx_mag_f32.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/ComplexMathFunctions/arm_cmplx_mag_q15.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/ComplexMathFunctions/arm_cmplx_mag_q31.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/ComplexMathFunctions/arm_cmplx_mag_squared_f32.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/ComplexMathFunctions/arm_cmplx_mag_squared_q15.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/ComplexMathFunctions/arm_cmplx_mag_squared_q31.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/ComplexMathFunctions/arm_cmplx_mult_cmplx_f32.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/ComplexMathFunctions/arm_cmplx_mult_cmplx_q15.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/ComplexMathFunctions/arm_cmplx_mult_cmplx_q31.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/ComplexMathFunctions/arm_cmplx_mult_real_f32.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/ComplexMathFunctions/arm_cmplx_mult_real_q15.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/ComplexMathFunctions/arm_cmplx_mult_real_q31.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/ControllerFunctions/arm_pid_init_f32.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/ControllerFunctions/arm_pid_init_q15.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/ControllerFunctions/arm_pid_init_q31.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/ControllerFunctions/arm_pid_reset_f32.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/ControllerFunctions/arm_pid_reset_q15.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/ControllerFunctions/arm_pid_reset_q31.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/ControllerFunctions/arm_sin_cos_f32.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/ControllerFunctions/arm_sin_cos_q31.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/FastMathFunctions/arm_cos_f32.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/FastMathFunctions/arm_cos_q15.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/FastMathFunctions/arm_cos_q31.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/FastMathFunctions/arm_sin_f32.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/FastMathFunctions/arm_sin_q15.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/FastMathFunctions/arm_sin_q31.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/FastMathFunctions/arm_sqrt_q15.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/FastMathFunctions/arm_sqrt_q31.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_32x64_init_q31.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_32x64_q31.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_f32.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_fast_q15.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_fast_q31.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_init_f32.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_init_q15.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_init_q31.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q15.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/FilteringFunctions/arm_biquad_cascade_df2T_f32.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/FilteringFunctions/arm_biquad_cascade_df2T_f64.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/FilteringFunctions/arm_biquad_cascade_df2T_init_f32.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/FilteringFunctions/arm_biquad_cascade_df2T_init_f64.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/FilteringFunctions/arm_biquad_cascade_stereo_df2T_f32.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/FilteringFunctions/arm_biquad_cascade_stereo_df2T_init_f32.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/FilteringFunctions/arm_conv_f32.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/FilteringFunctions/arm_conv_fast_opt_q15.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/FilteringFunctions/arm_conv_fast_q15.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/FilteringFunctions/arm_conv_fast_q31.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/FilteringFunctions/arm_conv_opt_q15.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/FilteringFunctions/arm_conv_opt_q7.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/FilteringFunctions/arm_conv_partial_f32.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/FilteringFunctions/arm_conv_partial_fast_opt_q15.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/FilteringFunctions/arm_conv_partial_fast_q15.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/FilteringFunctions/arm_conv_partial_fast_q31.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/FilteringFunctions/arm_conv_partial_opt_q15.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/FilteringFunctions/arm_conv_partial_opt_q7.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/FilteringFunctions/arm_conv_partial_q15.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/FilteringFunctions/arm_conv_partial_q31.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/FilteringFunctions/arm_conv_partial_q7.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/FilteringFunctions/arm_conv_q15.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/FilteringFunctions/arm_conv_q31.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/FilteringFunctions/arm_conv_q7.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/FilteringFunctions/arm_correlate_f32.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/FilteringFunctions/arm_correlate_fast_opt_q15.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/FilteringFunctions/arm_correlate_fast_q15.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/FilteringFunctions/arm_correlate_fast_q31.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/FilteringFunctions/arm_correlate_opt_q15.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/FilteringFunctions/arm_correlate_opt_q7.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/FilteringFunctions/arm_correlate_q15.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/FilteringFunctions/arm_correlate_q31.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/FilteringFunctions/arm_correlate_q7.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/FilteringFunctions/arm_fir_decimate_f32.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/FilteringFunctions/arm_fir_decimate_fast_q15.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/FilteringFunctions/arm_fir_decimate_fast_q31.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/FilteringFunctions/arm_fir_decimate_init_f32.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/FilteringFunctions/arm_fir_decimate_init_q15.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/FilteringFunctions/arm_fir_decimate_init_q31.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/FilteringFunctions/arm_fir_decimate_q15.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/FilteringFunctions/arm_fir_decimate_q31.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/FilteringFunctions/arm_fir_f32.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/FilteringFunctions/arm_fir_fast_q15.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/FilteringFunctions/arm_fir_fast_q31.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/FilteringFunctions/arm_fir_init_f32.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/FilteringFunctions/arm_fir_init_q15.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/FilteringFunctions/arm_fir_init_q31.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/FilteringFunctions/arm_fir_init_q7.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/FilteringFunctions/arm_fir_interpolate_f32.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/FilteringFunctions/arm_fir_interpolate_init_f32.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/FilteringFunctions/arm_fir_interpolate_init_q15.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/FilteringFunctions/arm_fir_interpolate_init_q31.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/FilteringFunctions/arm_fir_interpolate_q15.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/FilteringFunctions/arm_fir_interpolate_q31.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/FilteringFunctions/arm_fir_lattice_f32.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/FilteringFunctions/arm_fir_lattice_init_f32.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/FilteringFunctions/arm_fir_lattice_init_q15.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/FilteringFunctions/arm_fir_lattice_init_q31.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/FilteringFunctions/arm_fir_lattice_q15.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/FilteringFunctions/arm_fir_lattice_q31.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/FilteringFunctions/arm_fir_q15.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/FilteringFunctions/arm_fir_q31.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/FilteringFunctions/arm_fir_q7.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/FilteringFunctions/arm_fir_sparse_f32.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/FilteringFunctions/arm_fir_sparse_init_f32.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/FilteringFunctions/arm_fir_sparse_init_q15.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/FilteringFunctions/arm_fir_sparse_init_q31.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/FilteringFunctions/arm_fir_sparse_init_q7.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/FilteringFunctions/arm_fir_sparse_q15.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/FilteringFunctions/arm_fir_sparse_q31.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/FilteringFunctions/arm_fir_sparse_q7.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/FilteringFunctions/arm_iir_lattice_f32.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/FilteringFunctions/arm_iir_lattice_init_f32.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/FilteringFunctions/arm_iir_lattice_init_q15.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/FilteringFunctions/arm_iir_lattice_init_q31.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/FilteringFunctions/arm_iir_lattice_q15.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/FilteringFunctions/arm_iir_lattice_q31.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/FilteringFunctions/arm_lms_f32.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/FilteringFunctions/arm_lms_init_f32.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/FilteringFunctions/arm_lms_init_q15.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/FilteringFunctions/arm_lms_init_q31.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/FilteringFunctions/arm_lms_norm_f32.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/FilteringFunctions/arm_lms_norm_init_f32.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/FilteringFunctions/arm_lms_norm_init_q15.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/FilteringFunctions/arm_lms_norm_init_q31.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/FilteringFunctions/arm_lms_norm_q15.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/FilteringFunctions/arm_lms_norm_q31.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/FilteringFunctions/arm_lms_q15.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/FilteringFunctions/arm_lms_q31.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/MatrixFunctions/arm_mat_add_f32.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/MatrixFunctions/arm_mat_add_q15.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/MatrixFunctions/arm_mat_add_q31.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/MatrixFunctions/arm_mat_cmplx_mult_f32.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/MatrixFunctions/arm_mat_cmplx_mult_q15.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/MatrixFunctions/arm_mat_cmplx_mult_q31.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/MatrixFunctions/arm_mat_init_f32.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/MatrixFunctions/arm_mat_init_q15.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/MatrixFunctions/arm_mat_init_q31.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/MatrixFunctions/arm_mat_inverse_f32.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/MatrixFunctions/arm_mat_inverse_f64.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/MatrixFunctions/arm_mat_mult_f32.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/MatrixFunctions/arm_mat_mult_fast_q15.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/MatrixFunctions/arm_mat_mult_fast_q31.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/MatrixFunctions/arm_mat_mult_q15.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/MatrixFunctions/arm_mat_mult_q31.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/MatrixFunctions/arm_mat_scale_f32.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/MatrixFunctions/arm_mat_scale_q15.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/MatrixFunctions/arm_mat_scale_q31.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/MatrixFunctions/arm_mat_sub_f32.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/MatrixFunctions/arm_mat_sub_q15.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/MatrixFunctions/arm_mat_sub_q31.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/MatrixFunctions/arm_mat_trans_f32.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/MatrixFunctions/arm_mat_trans_q15.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/MatrixFunctions/arm_mat_trans_q31.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/StatisticsFunctions/arm_max_f32.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/StatisticsFunctions/arm_max_q15.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/StatisticsFunctions/arm_max_q31.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/StatisticsFunctions/arm_max_q7.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/StatisticsFunctions/arm_mean_f32.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/StatisticsFunctions/arm_mean_q15.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/StatisticsFunctions/arm_mean_q31.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/StatisticsFunctions/arm_mean_q7.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/StatisticsFunctions/arm_min_f32.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/StatisticsFunctions/arm_min_q15.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/StatisticsFunctions/arm_min_q31.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/StatisticsFunctions/arm_min_q7.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/StatisticsFunctions/arm_power_f32.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/StatisticsFunctions/arm_power_q15.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/StatisticsFunctions/arm_power_q31.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/StatisticsFunctions/arm_power_q7.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/StatisticsFunctions/arm_rms_f32.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/StatisticsFunctions/arm_rms_q15.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/StatisticsFunctions/arm_rms_q31.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/StatisticsFunctions/arm_std_f32.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/StatisticsFunctions/arm_std_q15.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/StatisticsFunctions/arm_std_q31.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/StatisticsFunctions/arm_var_f32.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/StatisticsFunctions/arm_var_q15.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/StatisticsFunctions/arm_var_q31.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/SupportFunctions/arm_copy_f32.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/SupportFunctions/arm_copy_q15.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/SupportFunctions/arm_copy_q31.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/SupportFunctions/arm_copy_q7.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/SupportFunctions/arm_fill_f32.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/SupportFunctions/arm_fill_q15.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/SupportFunctions/arm_fill_q31.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/SupportFunctions/arm_fill_q7.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/SupportFunctions/arm_float_to_q15.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/SupportFunctions/arm_float_to_q31.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/SupportFunctions/arm_float_to_q7.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/SupportFunctions/arm_q15_to_float.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/SupportFunctions/arm_q15_to_q31.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/SupportFunctions/arm_q15_to_q7.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/SupportFunctions/arm_q31_to_float.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/SupportFunctions/arm_q31_to_q15.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/SupportFunctions/arm_q31_to_q7.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/SupportFunctions/arm_q7_to_float.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/SupportFunctions/arm_q7_to_q15.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/SupportFunctions/arm_q7_to_q31.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/TransformFunctions/arm_bitreversal.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/TransformFunctions/arm_cfft_f32.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/TransformFunctions/arm_cfft_q15.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/TransformFunctions/arm_cfft_q31.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/TransformFunctions/arm_cfft_radix2_f32.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/TransformFunctions/arm_cfft_radix2_init_f32.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/TransformFunctions/arm_cfft_radix2_init_q15.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/TransformFunctions/arm_cfft_radix2_init_q31.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/TransformFunctions/arm_cfft_radix2_q15.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/TransformFunctions/arm_cfft_radix2_q31.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/TransformFunctions/arm_cfft_radix4_f32.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/TransformFunctions/arm_cfft_radix4_init_f32.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/TransformFunctions/arm_cfft_radix4_init_q15.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/TransformFunctions/arm_cfft_radix4_init_q31.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/TransformFunctions/arm_cfft_radix4_q15.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/TransformFunctions/arm_cfft_radix4_q31.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/TransformFunctions/arm_cfft_radix8_f32.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/TransformFunctions/arm_dct4_f32.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/TransformFunctions/arm_dct4_init_f32.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/TransformFunctions/arm_dct4_init_q15.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/TransformFunctions/arm_dct4_init_q31.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/TransformFunctions/arm_dct4_q15.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/TransformFunctions/arm_dct4_q31.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/TransformFunctions/arm_rfft_f32.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/TransformFunctions/arm_rfft_fast_f32.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/TransformFunctions/arm_rfft_fast_init_f32.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/TransformFunctions/arm_rfft_init_f32.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/TransformFunctions/arm_rfft_init_q15.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/TransformFunctions/arm_rfft_init_q31.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/TransformFunctions/arm_rfft_q15.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/DSP/Source/TransformFunctions/arm_rfft_q31.c">
+			<Option target="F103_Nano_general_libDSP"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c">
+			<Option target="F103_Nano_general"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c">
+			<Option target="F103_Nano_general"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c">
+			<Option target="F103_Nano_general"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_can.c">
+			<Option target="F103_Nano_general"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c">
+			<Option target="F103_Nano_general"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_crc.c">
+			<Option target="F103_Nano_general"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c">
+			<Option target="F103_Nano_general"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c">
+			<Option target="F103_Nano_general"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c">
+			<Option target="F103_Nano_general"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c">
+			<Option target="F103_Nano_general"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c">
+			<Option target="F103_Nano_general"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c">
+			<Option target="F103_Nano_general"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c">
+			<Option target="F103_Nano_general"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c">
+			<Option target="F103_Nano_general"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c">
+			<Option target="F103_Nano_general"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c">
+			<Option target="F103_Nano_general"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c">
+			<Option target="F103_Nano_general"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc_ex.c">
+			<Option target="F103_Nano_general"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c">
+			<Option target="F103_Nano_general"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c">
+			<Option target="F103_Nano_general"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c">
+			<Option target="F103_Nano_general"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c">
+			<Option target="F103_Nano_general"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c">
+			<Option target="F103_Nano_general"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h">
+			<Option target="F103_Nano_general"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/Middlewares/Third_Party/FreeRTOS/Source/croutine.c">
+			<Option target="F103_Nano_general"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/Middlewares/Third_Party/FreeRTOS/Source/event_groups.c">
+			<Option target="F103_Nano_general"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/Middlewares/Third_Party/FreeRTOS/Source/list.c">
+			<Option target="F103_Nano_general"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/port.c">
+			<Option target="F103_Nano_general"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c">
+			<Option target="F103_Nano_general"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/Middlewares/Third_Party/FreeRTOS/Source/queue.c">
+			<Option target="F103_Nano_general"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c">
+			<Option target="F103_Nano_general"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/Middlewares/Third_Party/FreeRTOS/Source/tasks.c">
+			<Option target="F103_Nano_general"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/Middlewares/Third_Party/FreeRTOS/Source/timers.c">
+			<Option target="F103_Nano_general"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/startup_stm32f103xb.s">
+			<Option target="F103_Nano_general"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/module_test/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\module_test\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/module_test/chassis_debug/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\module_test\chassis_debug\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/module_test/gimbal/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\module_test\gimbal\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/module_test/sensor_test/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\module_test\sensor_test\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/module_test/sensor_test/MPU6050_test/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\module_test\sensor_test\MPU6050_test\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/module_test/chassis_main/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\module_test\chassis_main\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/programs/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\programs\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/programs/DGStandard/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\programs\DGStandard\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/programs/DGStandard/chassis/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\programs\DGStandard\chassis\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/programs/DGStandard/gimbal/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\programs\DGStandard\gimbal\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\boards\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\boards\base\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/DJI_Board_TypeA_general/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\boards\base\DJI_Board_TypeA_general\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/DJI_Board_TypeC_general/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\boards\base\DJI_Board_TypeC_general\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/DM_MC01_general/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\boards\base\DM_MC01_general\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/DM_MC02_general/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\boards\base\DM_MC02_general\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\boards\base\F103_Nano_general\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/platform/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\boards\platform\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/platform/stm32f1/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\boards\platform\stm32f1\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/platform/stm32f4/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\boards\platform\stm32f4\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/platform/stm32h7/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\boards\platform\stm32h7\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/algorithm/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\boards\algorithm\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/drivers/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\boards\drivers\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/components/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\boards\components\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/third_party/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\boards\third_party\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/examples/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\examples\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/examples/DJI_Board_TypeA_general/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\examples\DJI_Board_TypeA_general\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/examples/DJI_Board_TypeA_general/MPU6500/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\examples\DJI_Board_TypeA_general\MPU6500\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/examples/DJI_Board_TypeA_general/buzzer/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\examples\DJI_Board_TypeA_general\buzzer\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/examples/DJI_Board_TypeA_general/can_bridge/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\examples\DJI_Board_TypeA_general\can_bridge\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/examples/DJI_Board_TypeA_general/chassis/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\examples\DJI_Board_TypeA_general\chassis\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/examples/DJI_Board_TypeA_general/dbus/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\examples\DJI_Board_TypeA_general\dbus\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/examples/DJI_Board_TypeA_general/fatfs/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\examples\DJI_Board_TypeA_general\fatfs\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/examples/DJI_Board_TypeA_general/gimbal/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\examples\DJI_Board_TypeA_general\gimbal\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/examples/DJI_Board_TypeA_general/led_flow/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\examples\DJI_Board_TypeA_general\led_flow\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/examples/DJI_Board_TypeA_general/motor/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\examples\DJI_Board_TypeA_general\motor\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/examples/DJI_Board_TypeA_general/referee/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\examples\DJI_Board_TypeA_general\referee\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/examples/DJI_Board_TypeA_general/witimu/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\examples\DJI_Board_TypeA_general\witimu\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/examples/DJI_Board_TypeC_general/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\examples\DJI_Board_TypeC_general\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/examples/DJI_Board_TypeC_general/BMI088/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\examples\DJI_Board_TypeC_general\BMI088\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/examples/DJI_Board_TypeC_general/buzzer/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\examples\DJI_Board_TypeC_general\buzzer\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/examples/DJI_Board_TypeC_general/can_bridge/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\examples\DJI_Board_TypeC_general\can_bridge\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/examples/DJI_Board_TypeC_general/chassis/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\examples\DJI_Board_TypeC_general\chassis\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/examples/DJI_Board_TypeC_general/cybergear/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\examples\DJI_Board_TypeC_general\cybergear\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/examples/DJI_Board_TypeC_general/dbus/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\examples\DJI_Board_TypeC_general\dbus\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/examples/DJI_Board_TypeC_general/gimbal/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\examples\DJI_Board_TypeC_general\gimbal\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/examples/DJI_Board_TypeC_general/imu/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\examples\DJI_Board_TypeC_general\imu\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/examples/DJI_Board_TypeC_general/ist8310/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\examples\DJI_Board_TypeC_general\ist8310\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/examples/DJI_Board_TypeC_general/key/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\examples\DJI_Board_TypeC_general\key\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/examples/DJI_Board_TypeC_general/led/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\examples\DJI_Board_TypeC_general\led\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/examples/DJI_Board_TypeC_general/motor/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\examples\DJI_Board_TypeC_general\motor\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/examples/DJI_Board_TypeC_general/oled/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\examples\DJI_Board_TypeC_general\oled\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/examples/DJI_Board_TypeC_general/onboard_temp/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\examples\DJI_Board_TypeC_general\onboard_temp\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/examples/DJI_Board_TypeC_general/referee/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\examples\DJI_Board_TypeC_general\referee\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/examples/DJI_Board_TypeC_general/sbus/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\examples\DJI_Board_TypeC_general\sbus\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/examples/DJI_Board_TypeC_general/supercap/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\examples\DJI_Board_TypeC_general\supercap\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/examples/DJI_Board_TypeC_general/usb/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\examples\DJI_Board_TypeC_general\usb\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/examples/DJI_Board_TypeC_general/witimu/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\examples\DJI_Board_TypeC_general\witimu\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/examples/DM_MC01_general/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\examples\DM_MC01_general\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/examples/DM_MC01_general/BMI088/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\examples\DM_MC01_general\BMI088\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/examples/DM_MC01_general/buzzer/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\examples\DM_MC01_general\buzzer\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/examples/DM_MC01_general/can_bridge/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\examples\DM_MC01_general\can_bridge\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/examples/DM_MC01_general/chassis/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\examples\DM_MC01_general\chassis\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/examples/DM_MC01_general/dbus/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\examples\DM_MC01_general\dbus\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/examples/DM_MC01_general/led/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\examples\DM_MC01_general\led\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/examples/DM_MC01_general/motor/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\examples\DM_MC01_general\motor\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/examples/DM_MC01_general/onboard_temp/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\examples\DM_MC01_general\onboard_temp\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/examples/DM_MC02_general/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\examples\DM_MC02_general\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/examples/DM_MC02_general/BMI088/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\examples\DM_MC02_general\BMI088\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/examples/DM_MC02_general/buzzer/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\examples\DM_MC02_general\buzzer\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/examples/DM_MC02_general/can_bridge/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\examples\DM_MC02_general\can_bridge\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/examples/DM_MC02_general/dbus/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\examples\DM_MC02_general\dbus\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/examples/DM_MC02_general/led/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\examples\DM_MC02_general\led\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/examples/DM_MC02_general/motor/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\examples\DM_MC02_general\motor\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/examples/DM_MC02_general/uart/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\examples\DM_MC02_general\uart\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/examples/F103_Nano_general/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\examples\F103_Nano_general\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/examples/F103_Nano_general/buzzer/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\examples\F103_Nano_general\buzzer\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/examples/F103_Nano_general/led/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\examples\F103_Nano_general\led\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/examples/F103_Nano_general/motor/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\examples\F103_Nano_general\motor\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/examples/F103_Nano_general/oled/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\examples\F103_Nano_general\oled\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake/arm_toolchain.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake/build_helper.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake/clang_format.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake/doxygen.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

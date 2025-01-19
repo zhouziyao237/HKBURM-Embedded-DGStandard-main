@@ -1,0 +1,1216 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "examples/DM_MC02_general/led/example_led_DM_MC02_general.elf"
+		}
+	],
+	"backtrace" : 2,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_executable",
+			"uicrm_add_arm_executable",
+			"target_link_options",
+			"target_link_libraries"
+		],
+		"files" : 
+		[
+			"cmake/build_helper.cmake",
+			"examples/DM_MC02_general/led/CMakeLists.txt",
+			"boards/base/DM_MC02_general/CMakeLists.txt",
+			"boards/base/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 3,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 23,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 28,
+				"parent" : 1
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 24,
+				"parent" : 1
+			},
+			{
+				"file" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 2,
+				"line" : 69,
+				"parent" : 5
+			},
+			{
+				"file" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 3,
+				"line" : 10,
+				"parent" : 7
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-Wall -Werror -Wextra -fdiagnostics-color=always -fno-exceptions -Og -g -DDEBUG -fdiagnostics-color=always"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-mcpu=cortex-m7"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-mthumb"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-mthumb-interwork"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-mfpu=fpv5-d16"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-mfloat-abi=hard"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-ffunction-sections"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-fdata-sections"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-fmessage-length=0"
+				},
+				{
+					"fragment" : "-std=gnu++17"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 4,
+					"define" : "ARM_MATH_CM7"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "STM32H723xx"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "USE_HAL_DRIVER"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 4,
+					"path" : "F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/DM_MC02_general/Core/Inc"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/DM_MC02_general/USB_DEVICE/App"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/DM_MC02_general/USB_DEVICE/Target"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/DM_MC02_general/Drivers/STM32H7xx_HAL_Driver/Inc"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/DM_MC02_general/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/DM_MC02_general/Drivers/CMSIS/Include"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/DM_MC02_general/Drivers/CMSIS/Device/ST/STM32H7xx/Include"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/DM_MC02_general/DSP/Include"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/DM_MC02_general/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/DM_MC02_general/Middlewares/ST/STM32_USB_Device_Library/Core/Inc"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/DM_MC02_general/Middlewares/Third_Party/FatFs/src"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/DM_MC02_general/Middlewares/Third_Party/FreeRTOS/Source/include"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/DM_MC02_general/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/DM_MC02_general/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/platform/stm32h7/include"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/platform/stm32h7/../../third_party/printf/include"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/algorithm/include"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/algorithm/../third_party/MahonyAHRS/include"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/algorithm/../third_party/QuaternionEKF/include"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/drivers/include"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/drivers/../third_party/crc_check/include"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/drivers/DM_MC02/include"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/components/include"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					2
+				],
+				"standard" : "17"
+			},
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 4,
+			"id" : "DM_MC02_general_libDSP::@802959ddc0016d8f1761"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "DM_MC02_general::@802959ddc0016d8f1761"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "DM_MC02_general_platform::@b0fa9ca640f49d839945"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "DM_MC02_general_drivers::@fa52034afb78f9802074"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "DM_MC02_general_algorithm::@f85c889408ec60e84176"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "DM_MC02_general_components::@7e3e98385174a30bc5e4"
+		}
+	],
+	"id" : "example_led_DM_MC02_general.elf::@e0b64303dd62a6f429f4",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "-Wall -Werror -Wextra -fdiagnostics-color=always -fno-exceptions -Og -g -DDEBUG",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--print-memory-usage,-Map=F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/examples/DM_MC02_general/led/example_led_DM_MC02_general.map",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "-mcpu=cortex-m7",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "-mthumb",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "-mthumb-interwork",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "-mfpu=fpv5-d16",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "-mfloat-abi=hard",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "-TF:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/DM_MC02_general/STM32H723VGTX_FLASH.ld",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "-specs=nano.specs",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "-specs=nosys.specs",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "-Wl,--gc-sections",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "-Wl,--wrap=malloc",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "-Wl,--wrap=free",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "-Wl,--wrap=calloc",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "-Wl,--wrap=realloc",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "..\\..\\..\\boards\\base\\DM_MC02_general\\libDM_MC02_general_libDSP.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 8,
+				"fragment" : "-lc",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 8,
+				"fragment" : "-lm",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "example_led_DM_MC02_general.elf",
+	"nameOnDisk" : "example_led_DM_MC02_general.elf",
+	"paths" : 
+	{
+		"build" : "examples/DM_MC02_general/led",
+		"source" : "examples/DM_MC02_general/led"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "Object Libraries",
+			"sourceIndexes" : 
+			[
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23,
+				24,
+				25,
+				26,
+				27,
+				28,
+				29,
+				30,
+				31,
+				32,
+				33,
+				34,
+				35,
+				36,
+				37,
+				38,
+				39,
+				40,
+				41,
+				42,
+				43,
+				44,
+				45,
+				46,
+				47,
+				48,
+				49,
+				50,
+				51,
+				52,
+				53,
+				54,
+				55,
+				56,
+				57,
+				58,
+				59,
+				60,
+				61,
+				62,
+				63,
+				64,
+				65,
+				66,
+				67,
+				68,
+				69,
+				70,
+				71,
+				72,
+				73,
+				74,
+				75,
+				76,
+				77,
+				78,
+				79,
+				80,
+				81,
+				82,
+				83,
+				84,
+				85,
+				86,
+				87,
+				88,
+				89,
+				90,
+				91,
+				92,
+				93,
+				94,
+				95,
+				96,
+				97,
+				98,
+				99,
+				100,
+				101,
+				102,
+				103,
+				104,
+				105,
+				106,
+				107,
+				108,
+				109,
+				110,
+				111,
+				112,
+				113,
+				114,
+				115,
+				116
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "examples/DM_MC02_general/led/main.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/boards/base/DM_MC02_general/CMakeFiles/DM_MC02_general.dir/Core/Src/adc.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/boards/base/DM_MC02_general/CMakeFiles/DM_MC02_general.dir/Core/Src/dcmi.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/boards/base/DM_MC02_general/CMakeFiles/DM_MC02_general.dir/Core/Src/dma.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/boards/base/DM_MC02_general/CMakeFiles/DM_MC02_general.dir/Core/Src/fdcan.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/boards/base/DM_MC02_general/CMakeFiles/DM_MC02_general.dir/Core/Src/freertos.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/boards/base/DM_MC02_general/CMakeFiles/DM_MC02_general.dir/Core/Src/gpio.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/boards/base/DM_MC02_general/CMakeFiles/DM_MC02_general.dir/Core/Src/i2c.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/boards/base/DM_MC02_general/CMakeFiles/DM_MC02_general.dir/Core/Src/main.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/boards/base/DM_MC02_general/CMakeFiles/DM_MC02_general.dir/Core/Src/octospi.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/boards/base/DM_MC02_general/CMakeFiles/DM_MC02_general.dir/Core/Src/spi.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/boards/base/DM_MC02_general/CMakeFiles/DM_MC02_general.dir/Core/Src/stm32h7xx_hal_msp.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/boards/base/DM_MC02_general/CMakeFiles/DM_MC02_general.dir/Core/Src/stm32h7xx_hal_timebase_tim.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/boards/base/DM_MC02_general/CMakeFiles/DM_MC02_general.dir/Core/Src/stm32h7xx_it.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/boards/base/DM_MC02_general/CMakeFiles/DM_MC02_general.dir/Core/Src/syscalls.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/boards/base/DM_MC02_general/CMakeFiles/DM_MC02_general.dir/Core/Src/sysmem.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/boards/base/DM_MC02_general/CMakeFiles/DM_MC02_general.dir/Core/Src/system_stm32h7xx.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/boards/base/DM_MC02_general/CMakeFiles/DM_MC02_general.dir/Core/Src/tim.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/boards/base/DM_MC02_general/CMakeFiles/DM_MC02_general.dir/Core/Src/usart.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/boards/base/DM_MC02_general/CMakeFiles/DM_MC02_general.dir/USB_DEVICE/App/usb_device.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/boards/base/DM_MC02_general/CMakeFiles/DM_MC02_general.dir/USB_DEVICE/App/usbd_cdc_if.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/boards/base/DM_MC02_general/CMakeFiles/DM_MC02_general.dir/USB_DEVICE/App/usbd_desc.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/boards/base/DM_MC02_general/CMakeFiles/DM_MC02_general.dir/USB_DEVICE/Target/usbd_conf.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/boards/base/DM_MC02_general/CMakeFiles/DM_MC02_general.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/boards/base/DM_MC02_general/CMakeFiles/DM_MC02_general.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/boards/base/DM_MC02_general/CMakeFiles/DM_MC02_general.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc_ex.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/boards/base/DM_MC02_general/CMakeFiles/DM_MC02_general.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/boards/base/DM_MC02_general/CMakeFiles/DM_MC02_general.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dcmi.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/boards/base/DM_MC02_general/CMakeFiles/DM_MC02_general.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/boards/base/DM_MC02_general/CMakeFiles/DM_MC02_general.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/boards/base/DM_MC02_general/CMakeFiles/DM_MC02_general.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/boards/base/DM_MC02_general/CMakeFiles/DM_MC02_general.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_fdcan.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/boards/base/DM_MC02_general/CMakeFiles/DM_MC02_general.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/boards/base/DM_MC02_general/CMakeFiles/DM_MC02_general.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/boards/base/DM_MC02_general/CMakeFiles/DM_MC02_general.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/boards/base/DM_MC02_general/CMakeFiles/DM_MC02_general.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/boards/base/DM_MC02_general/CMakeFiles/DM_MC02_general.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/boards/base/DM_MC02_general/CMakeFiles/DM_MC02_general.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/boards/base/DM_MC02_general/CMakeFiles/DM_MC02_general.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/boards/base/DM_MC02_general/CMakeFiles/DM_MC02_general.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ospi.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/boards/base/DM_MC02_general/CMakeFiles/DM_MC02_general.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/boards/base/DM_MC02_general/CMakeFiles/DM_MC02_general.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd_ex.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/boards/base/DM_MC02_general/CMakeFiles/DM_MC02_general.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/boards/base/DM_MC02_general/CMakeFiles/DM_MC02_general.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/boards/base/DM_MC02_general/CMakeFiles/DM_MC02_general.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/boards/base/DM_MC02_general/CMakeFiles/DM_MC02_general.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/boards/base/DM_MC02_general/CMakeFiles/DM_MC02_general.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_spi.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/boards/base/DM_MC02_general/CMakeFiles/DM_MC02_general.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_spi_ex.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/boards/base/DM_MC02_general/CMakeFiles/DM_MC02_general.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/boards/base/DM_MC02_general/CMakeFiles/DM_MC02_general.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/boards/base/DM_MC02_general/CMakeFiles/DM_MC02_general.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/boards/base/DM_MC02_general/CMakeFiles/DM_MC02_general.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/boards/base/DM_MC02_general/CMakeFiles/DM_MC02_general.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_usb.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/boards/base/DM_MC02_general/CMakeFiles/DM_MC02_general.dir/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/boards/base/DM_MC02_general/CMakeFiles/DM_MC02_general.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/boards/base/DM_MC02_general/CMakeFiles/DM_MC02_general.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/boards/base/DM_MC02_general/CMakeFiles/DM_MC02_general.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/boards/base/DM_MC02_general/CMakeFiles/DM_MC02_general.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/boards/base/DM_MC02_general/CMakeFiles/DM_MC02_general.dir/Middlewares/Third_Party/FreeRTOS/Source/croutine.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/boards/base/DM_MC02_general/CMakeFiles/DM_MC02_general.dir/Middlewares/Third_Party/FreeRTOS/Source/event_groups.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/boards/base/DM_MC02_general/CMakeFiles/DM_MC02_general.dir/Middlewares/Third_Party/FreeRTOS/Source/list.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/boards/base/DM_MC02_general/CMakeFiles/DM_MC02_general.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/boards/base/DM_MC02_general/CMakeFiles/DM_MC02_general.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/boards/base/DM_MC02_general/CMakeFiles/DM_MC02_general.dir/Middlewares/Third_Party/FreeRTOS/Source/queue.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/boards/base/DM_MC02_general/CMakeFiles/DM_MC02_general.dir/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/boards/base/DM_MC02_general/CMakeFiles/DM_MC02_general.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/boards/base/DM_MC02_general/CMakeFiles/DM_MC02_general.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/boards/base/DM_MC02_general/CMakeFiles/DM_MC02_general.dir/startup_stm32h723xx.s.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/boards/platform/stm32h7/CMakeFiles/DM_MC02_general_platform.dir/src/bsp_adc.cpp.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/boards/platform/stm32h7/CMakeFiles/DM_MC02_general_platform.dir/src/bsp_can.cpp.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/boards/platform/stm32h7/CMakeFiles/DM_MC02_general_platform.dir/src/bsp_dwt.cpp.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/boards/platform/stm32h7/CMakeFiles/DM_MC02_general_platform.dir/src/bsp_error_handler.cpp.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/boards/platform/stm32h7/CMakeFiles/DM_MC02_general_platform.dir/src/bsp_gpio.cpp.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/boards/platform/stm32h7/CMakeFiles/DM_MC02_general_platform.dir/src/bsp_i2c.cpp.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/boards/platform/stm32h7/CMakeFiles/DM_MC02_general_platform.dir/src/bsp_memory.cpp.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/boards/platform/stm32h7/CMakeFiles/DM_MC02_general_platform.dir/src/bsp_os.cpp.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/boards/platform/stm32h7/CMakeFiles/DM_MC02_general_platform.dir/src/bsp_print.cpp.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/boards/platform/stm32h7/CMakeFiles/DM_MC02_general_platform.dir/src/bsp_pwm.cpp.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/boards/platform/stm32h7/CMakeFiles/DM_MC02_general_platform.dir/src/bsp_spi.cpp.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/boards/platform/stm32h7/CMakeFiles/DM_MC02_general_platform.dir/src/bsp_thread.cpp.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/boards/platform/stm32h7/CMakeFiles/DM_MC02_general_platform.dir/src/bsp_uart.cpp.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/boards/platform/stm32h7/CMakeFiles/DM_MC02_general_platform.dir/src/bsp_usb.cpp.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/boards/platform/stm32h7/CMakeFiles/DM_MC02_general_platform.dir/__/__/third_party/printf/src/printf.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/boards/algorithm/CMakeFiles/DM_MC02_general_algorithm.dir/src/AHRS.cpp.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/boards/algorithm/CMakeFiles/DM_MC02_general_algorithm.dir/src/QEKF.cpp.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/boards/algorithm/CMakeFiles/DM_MC02_general_algorithm.dir/src/crc8.cpp.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/boards/algorithm/CMakeFiles/DM_MC02_general_algorithm.dir/src/pid.cpp.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/boards/algorithm/CMakeFiles/DM_MC02_general_algorithm.dir/src/power_limit.cpp.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/boards/algorithm/CMakeFiles/DM_MC02_general_algorithm.dir/src/utils.cpp.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/boards/algorithm/CMakeFiles/DM_MC02_general_algorithm.dir/__/third_party/MahonyAHRS/src/MahonyAHRS.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/boards/algorithm/CMakeFiles/DM_MC02_general_algorithm.dir/__/third_party/QuaternionEKF/src/QEKF_userlib.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/boards/algorithm/CMakeFiles/DM_MC02_general_algorithm.dir/__/third_party/QuaternionEKF/src/QuaternionEKF.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/boards/algorithm/CMakeFiles/DM_MC02_general_algorithm.dir/__/third_party/QuaternionEKF/src/kalman_filter.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/boards/drivers/CMakeFiles/DM_MC02_general_drivers.dir/src/BMI088.cpp.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/boards/drivers/CMakeFiles/DM_MC02_general_drivers.dir/src/DMmotor.cpp.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/boards/drivers/CMakeFiles/DM_MC02_general_drivers.dir/src/IST8310.cpp.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/boards/drivers/CMakeFiles/DM_MC02_general_drivers.dir/src/MPU6500.cpp.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/boards/drivers/CMakeFiles/DM_MC02_general_drivers.dir/src/MotorCanBase.cpp.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/boards/drivers/CMakeFiles/DM_MC02_general_drivers.dir/src/MotorPWMBase.cpp.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/boards/drivers/CMakeFiles/DM_MC02_general_drivers.dir/src/buzzer.cpp.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/boards/drivers/CMakeFiles/DM_MC02_general_drivers.dir/src/can_bridge.cpp.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/boards/drivers/CMakeFiles/DM_MC02_general_drivers.dir/src/connection_driver.cpp.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/boards/drivers/CMakeFiles/DM_MC02_general_drivers.dir/src/cybergear.cpp.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/boards/drivers/CMakeFiles/DM_MC02_general_drivers.dir/src/dbus.cpp.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/boards/drivers/CMakeFiles/DM_MC02_general_drivers.dir/src/heater.cpp.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/boards/drivers/CMakeFiles/DM_MC02_general_drivers.dir/src/oled.cpp.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/boards/drivers/CMakeFiles/DM_MC02_general_drivers.dir/src/protocol.cpp.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/boards/drivers/CMakeFiles/DM_MC02_general_drivers.dir/src/rgb.cpp.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/boards/drivers/CMakeFiles/DM_MC02_general_drivers.dir/src/sbus.cpp.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/boards/drivers/CMakeFiles/DM_MC02_general_drivers.dir/src/supercap.cpp.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/boards/drivers/CMakeFiles/DM_MC02_general_drivers.dir/src/wit_protocol.cpp.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/boards/drivers/CMakeFiles/DM_MC02_general_drivers.dir/src/ws2812b_spi.cpp.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/boards/drivers/CMakeFiles/DM_MC02_general_drivers.dir/__/third_party/crc_check/src/crc_check.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/boards/components/CMakeFiles/DM_MC02_general_components.dir/src/chassis.cpp.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/boards/components/CMakeFiles/DM_MC02_general_components.dir/src/fric.cpp.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/boards/components/CMakeFiles/DM_MC02_general_components.dir/src/gimbal.cpp.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/boards/components/CMakeFiles/DM_MC02_general_components.dir/src/user_interface.cpp.obj",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "EXECUTABLE"
+}

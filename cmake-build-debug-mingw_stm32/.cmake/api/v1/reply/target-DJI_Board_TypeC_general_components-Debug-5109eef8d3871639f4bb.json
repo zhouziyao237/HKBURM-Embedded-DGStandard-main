@@ -1,0 +1,302 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "boards/components/CMakeFiles/DJI_Board_TypeC_general_components.dir/src/chassis.cpp.obj"
+		},
+		{
+			"path" : "boards/components/CMakeFiles/DJI_Board_TypeC_general_components.dir/src/fric.cpp.obj"
+		},
+		{
+			"path" : "boards/components/CMakeFiles/DJI_Board_TypeC_general_components.dir/src/gimbal.cpp.obj"
+		},
+		{
+			"path" : "boards/components/CMakeFiles/DJI_Board_TypeC_general_components.dir/src/user_interface.cpp.obj"
+		}
+	],
+	"backtrace" : 2,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"uicrm_add_board_specific_library",
+			"target_link_libraries",
+			"target_include_directories"
+		],
+		"files" : 
+		[
+			"cmake/build_helper.cmake",
+			"boards/components/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 7,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 60,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 61,
+				"parent" : 1
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 64,
+				"parent" : 1
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-Wall -Werror -Wextra -fdiagnostics-color=always -fno-exceptions -Og -g -DDEBUG -fdiagnostics-color=always"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-mcpu=cortex-m4"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-mthumb"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-mthumb-interwork"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-mfpu=fpv4-sp-d16"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-mfloat-abi=hard"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-ffunction-sections"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-fdata-sections"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-fmessage-length=0"
+				},
+				{
+					"fragment" : "-std=gnu++17"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 3,
+					"define" : "ARM_MATH_CM4"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "BOARD_HAS_UART_DMA_DOUBLE_BUFFER"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "STM32F407xx"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "USE_HAL_DRIVER"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 4,
+					"path" : "F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/components/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/DJI_Board_TypeC_general/Core/Inc"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/DJI_Board_TypeC_general/USB_DEVICE/App"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/DJI_Board_TypeC_general/USB_DEVICE/Target"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/DJI_Board_TypeC_general/Drivers/STM32F4xx_HAL_Driver/Inc"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/DJI_Board_TypeC_general/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/DJI_Board_TypeC_general/Drivers/CMSIS/Include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/DJI_Board_TypeC_general/Drivers/CMSIS/Device/ST/STM32F4xx/Include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/DJI_Board_TypeC_general/DSP/Include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/DJI_Board_TypeC_general/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/DJI_Board_TypeC_general/Middlewares/ST/STM32_USB_Device_Library/Core/Inc"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/DJI_Board_TypeC_general/Middlewares/Third_Party/FatFs/src"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/DJI_Board_TypeC_general/Middlewares/Third_Party/FreeRTOS/Source/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/DJI_Board_TypeC_general/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/DJI_Board_TypeC_general/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/drivers/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/drivers/../third_party/crc_check/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/drivers/DJI_Board_TypeC/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/algorithm/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/algorithm/../third_party/MahonyAHRS/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/algorithm/../third_party/QuaternionEKF/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/platform/stm32f4/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/platform/stm32f4/../../third_party/printf/include"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					2
+				],
+				"standard" : "17"
+			},
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 3,
+			"id" : "DJI_Board_TypeC_general_platform::@2c63e28c9383ea6b0a66"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "DJI_Board_TypeC_general_algorithm::@f85c889408ec60e84176"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "DJI_Board_TypeC_general_drivers::@fa52034afb78f9802074"
+		}
+	],
+	"id" : "DJI_Board_TypeC_general_components::@7e3e98385174a30bc5e4",
+	"name" : "DJI_Board_TypeC_general_components",
+	"paths" : 
+	{
+		"build" : "boards/components",
+		"source" : "boards/components"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "boards/components/src/chassis.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "boards/components/src/fric.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "boards/components/src/gimbal.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "boards/components/src/user_interface.cpp",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "OBJECT_LIBRARY"
+}

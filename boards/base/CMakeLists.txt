@@ -1,5 +1,5 @@
 # generic board interface
-add_library(board_interface INTERFACE ../../module_test/gimbal/src/RM_Debug_control_model.cpp ../../module_test/sensor_test/MPU6050/MPU6050.cpp ../../module_test/sensor_test/MPU6050/main.cpp ../../module_test/sensor_test/MPU6050/MPU6050.h)
+add_library(board_interface INTERFACE)
 target_compile_definitions(board_interface INTERFACE USE_HAL_DRIVER)
 target_compile_options(board_interface INTERFACE
         $<$<COMPILE_LANGUAGE:ASM>:-x assembler-with-cpp>

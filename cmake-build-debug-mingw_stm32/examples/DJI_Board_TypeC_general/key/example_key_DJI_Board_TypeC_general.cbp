@@ -1,0 +1,733 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="example_key_DJI_Board_TypeC_general"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\module_test\;CMake Files\module_test\chassis_debug\;CMake Files\module_test\gimbal\;CMake Files\module_test\sensor_test\;CMake Files\module_test\sensor_test\MPU6050_test\;CMake Files\module_test\chassis_main\;CMake Files\programs\;CMake Files\programs\DGStandard\;CMake Files\programs\DGStandard\chassis\;CMake Files\programs\DGStandard\gimbal\;CMake Files\boards\;CMake Files\boards\base\;CMake Files\boards\base\DJI_Board_TypeA_general\;CMake Files\boards\base\DJI_Board_TypeC_general\;CMake Files\boards\base\DM_MC01_general\;CMake Files\boards\base\DM_MC02_general\;CMake Files\boards\base\F103_Nano_general\;CMake Files\boards\platform\;CMake Files\boards\platform\stm32f1\;CMake Files\boards\platform\stm32f4\;CMake Files\boards\platform\stm32h7\;CMake Files\boards\algorithm\;CMake Files\boards\drivers\;CMake Files\boards\components\;CMake Files\boards\third_party\;CMake Files\examples\;CMake Files\examples\DJI_Board_TypeA_general\;CMake Files\examples\DJI_Board_TypeA_general\MPU6500\;CMake Files\examples\DJI_Board_TypeA_general\buzzer\;CMake Files\examples\DJI_Board_TypeA_general\can_bridge\;CMake Files\examples\DJI_Board_TypeA_general\chassis\;CMake Files\examples\DJI_Board_TypeA_general\dbus\;CMake Files\examples\DJI_Board_TypeA_general\fatfs\;CMake Files\examples\DJI_Board_TypeA_general\gimbal\;CMake Files\examples\DJI_Board_TypeA_general\led_flow\;CMake Files\examples\DJI_Board_TypeA_general\motor\;CMake Files\examples\DJI_Board_TypeA_general\referee\;CMake Files\examples\DJI_Board_TypeA_general\witimu\;CMake Files\examples\DJI_Board_TypeC_general\;CMake Files\examples\DJI_Board_TypeC_general\BMI088\;CMake Files\examples\DJI_Board_TypeC_general\buzzer\;CMake Files\examples\DJI_Board_TypeC_general\can_bridge\;CMake Files\examples\DJI_Board_TypeC_general\chassis\;CMake Files\examples\DJI_Board_TypeC_general\cybergear\;CMake Files\examples\DJI_Board_TypeC_general\dbus\;CMake Files\examples\DJI_Board_TypeC_general\gimbal\;CMake Files\examples\DJI_Board_TypeC_general\imu\;CMake Files\examples\DJI_Board_TypeC_general\ist8310\;CMake Files\examples\DJI_Board_TypeC_general\key\;CMake Files\examples\DJI_Board_TypeC_general\led\;CMake Files\examples\DJI_Board_TypeC_general\motor\;CMake Files\examples\DJI_Board_TypeC_general\oled\;CMake Files\examples\DJI_Board_TypeC_general\onboard_temp\;CMake Files\examples\DJI_Board_TypeC_general\referee\;CMake Files\examples\DJI_Board_TypeC_general\sbus\;CMake Files\examples\DJI_Board_TypeC_general\supercap\;CMake Files\examples\DJI_Board_TypeC_general\usb\;CMake Files\examples\DJI_Board_TypeC_general\witimu\;CMake Files\examples\DM_MC01_general\;CMake Files\examples\DM_MC01_general\BMI088\;CMake Files\examples\DM_MC01_general\buzzer\;CMake Files\examples\DM_MC01_general\can_bridge\;CMake Files\examples\DM_MC01_general\chassis\;CMake Files\examples\DM_MC01_general\dbus\;CMake Files\examples\DM_MC01_general\led\;CMake Files\examples\DM_MC01_general\motor\;CMake Files\examples\DM_MC01_general\onboard_temp\;CMake Files\examples\DM_MC02_general\;CMake Files\examples\DM_MC02_general\BMI088\;CMake Files\examples\DM_MC02_general\buzzer\;CMake Files\examples\DM_MC02_general\can_bridge\;CMake Files\examples\DM_MC02_general\dbus\;CMake Files\examples\DM_MC02_general\led\;CMake Files\examples\DM_MC02_general\motor\;CMake Files\examples\DM_MC02_general\uart\;CMake Files\examples\F103_Nano_general\;CMake Files\examples\F103_Nano_general\buzzer\;CMake Files\examples\F103_Nano_general\led\;CMake Files\examples\F103_Nano_general\motor\;CMake Files\examples\F103_Nano_general\oled\;CMake Files\cmake\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/examples/DJI_Board_TypeC_general/key"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/examples/DJI_Board_TypeC_general/key/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="D:/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/examples/DJI_Board_TypeC_general/key/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/examples/DJI_Board_TypeC_general/key/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/examples/DJI_Board_TypeC_general/key/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="example_key_DJI_Board_TypeC_general_typeC.elf">
+				<Option output="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/examples/DJI_Board_TypeC_general/key/example_key_DJI_Board_TypeC_general_typeC.elf" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/examples/DJI_Board_TypeC_general/key"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DSTM32F407xx"/>
+					<Add option="-DARM_MATH_CM4"/>
+					<Add option="-DBOARD_HAS_UART_DMA_DOUBLE_BUFFER"/>
+					<Add option="-DUSE_HAL_DRIVER"/>
+					<Add directory="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/DJI_Board_TypeC_general/Core/Inc"/>
+					<Add directory="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/DJI_Board_TypeC_general/USB_DEVICE/App"/>
+					<Add directory="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/DJI_Board_TypeC_general/USB_DEVICE/Target"/>
+					<Add directory="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/DJI_Board_TypeC_general/Drivers/STM32F4xx_HAL_Driver/Inc"/>
+					<Add directory="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/DJI_Board_TypeC_general/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy"/>
+					<Add directory="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/DJI_Board_TypeC_general/Drivers/CMSIS/Include"/>
+					<Add directory="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/DJI_Board_TypeC_general/Drivers/CMSIS/Device/ST/STM32F4xx/Include"/>
+					<Add directory="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/DJI_Board_TypeC_general/DSP/Include"/>
+					<Add directory="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/DJI_Board_TypeC_general/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc"/>
+					<Add directory="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/DJI_Board_TypeC_general/Middlewares/ST/STM32_USB_Device_Library/Core/Inc"/>
+					<Add directory="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/DJI_Board_TypeC_general/Middlewares/Third_Party/FatFs/src"/>
+					<Add directory="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/DJI_Board_TypeC_general/Middlewares/Third_Party/FreeRTOS/Source/include"/>
+					<Add directory="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/DJI_Board_TypeC_general/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2"/>
+					<Add directory="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/DJI_Board_TypeC_general/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F"/>
+					<Add directory="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/platform/stm32f4/include"/>
+					<Add directory="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/platform/stm32f4/../../third_party/printf/include"/>
+					<Add directory="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/algorithm/include"/>
+					<Add directory="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/algorithm/../third_party/MahonyAHRS/include"/>
+					<Add directory="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/algorithm/../third_party/QuaternionEKF/include"/>
+					<Add directory="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/drivers/include"/>
+					<Add directory="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/drivers/../third_party/crc_check/include"/>
+					<Add directory="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/drivers/DJI_Board_TypeC/include"/>
+					<Add directory="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/components/include"/>
+					<Add directory="d:\stm32_cmake\gcc-arm-none-eabi-10-2020-q4-major\bin\../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/include/c++/10.2.1"/>
+					<Add directory="d:\stm32_cmake\gcc-arm-none-eabi-10-2020-q4-major\bin\../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/include/c++/10.2.1/arm-none-eabi"/>
+					<Add directory="d:\stm32_cmake\gcc-arm-none-eabi-10-2020-q4-major\bin\../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/include/c++/10.2.1/backward"/>
+					<Add directory="d:\stm32_cmake\gcc-arm-none-eabi-10-2020-q4-major\bin\../lib/gcc/arm-none-eabi/10.2.1/include"/>
+					<Add directory="d:\stm32_cmake\gcc-arm-none-eabi-10-2020-q4-major\bin\../lib/gcc/arm-none-eabi/10.2.1/include-fixed"/>
+					<Add directory="d:\stm32_cmake\gcc-arm-none-eabi-10-2020-q4-major\bin\../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/examples/DJI_Board_TypeC_general/key/Makefile&quot;  VERBOSE=1 example_key_DJI_Board_TypeC_general_typeC.elf"/>
+					<CompileFile command="D:/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/examples/DJI_Board_TypeC_general/key/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/examples/DJI_Board_TypeC_general/key/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/examples/DJI_Board_TypeC_general/key/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="example_key_DJI_Board_TypeC_general_typeC.elf/fast">
+				<Option output="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/examples/DJI_Board_TypeC_general/key/example_key_DJI_Board_TypeC_general_typeC.elf" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/examples/DJI_Board_TypeC_general/key"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DSTM32F407xx"/>
+					<Add option="-DARM_MATH_CM4"/>
+					<Add option="-DBOARD_HAS_UART_DMA_DOUBLE_BUFFER"/>
+					<Add option="-DUSE_HAL_DRIVER"/>
+					<Add directory="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/DJI_Board_TypeC_general/Core/Inc"/>
+					<Add directory="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/DJI_Board_TypeC_general/USB_DEVICE/App"/>
+					<Add directory="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/DJI_Board_TypeC_general/USB_DEVICE/Target"/>
+					<Add directory="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/DJI_Board_TypeC_general/Drivers/STM32F4xx_HAL_Driver/Inc"/>
+					<Add directory="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/DJI_Board_TypeC_general/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy"/>
+					<Add directory="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/DJI_Board_TypeC_general/Drivers/CMSIS/Include"/>
+					<Add directory="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/DJI_Board_TypeC_general/Drivers/CMSIS/Device/ST/STM32F4xx/Include"/>
+					<Add directory="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/DJI_Board_TypeC_general/DSP/Include"/>
+					<Add directory="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/DJI_Board_TypeC_general/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc"/>
+					<Add directory="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/DJI_Board_TypeC_general/Middlewares/ST/STM32_USB_Device_Library/Core/Inc"/>
+					<Add directory="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/DJI_Board_TypeC_general/Middlewares/Third_Party/FatFs/src"/>
+					<Add directory="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/DJI_Board_TypeC_general/Middlewares/Third_Party/FreeRTOS/Source/include"/>
+					<Add directory="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/DJI_Board_TypeC_general/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2"/>
+					<Add directory="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/DJI_Board_TypeC_general/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F"/>
+					<Add directory="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/platform/stm32f4/include"/>
+					<Add directory="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/platform/stm32f4/../../third_party/printf/include"/>
+					<Add directory="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/algorithm/include"/>
+					<Add directory="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/algorithm/../third_party/MahonyAHRS/include"/>
+					<Add directory="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/algorithm/../third_party/QuaternionEKF/include"/>
+					<Add directory="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/drivers/include"/>
+					<Add directory="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/drivers/../third_party/crc_check/include"/>
+					<Add directory="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/drivers/DJI_Board_TypeC/include"/>
+					<Add directory="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/components/include"/>
+					<Add directory="d:\stm32_cmake\gcc-arm-none-eabi-10-2020-q4-major\bin\../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/include/c++/10.2.1"/>
+					<Add directory="d:\stm32_cmake\gcc-arm-none-eabi-10-2020-q4-major\bin\../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/include/c++/10.2.1/arm-none-eabi"/>
+					<Add directory="d:\stm32_cmake\gcc-arm-none-eabi-10-2020-q4-major\bin\../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/include/c++/10.2.1/backward"/>
+					<Add directory="d:\stm32_cmake\gcc-arm-none-eabi-10-2020-q4-major\bin\../lib/gcc/arm-none-eabi/10.2.1/include"/>
+					<Add directory="d:\stm32_cmake\gcc-arm-none-eabi-10-2020-q4-major\bin\../lib/gcc/arm-none-eabi/10.2.1/include-fixed"/>
+					<Add directory="d:\stm32_cmake\gcc-arm-none-eabi-10-2020-q4-major\bin\../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/examples/DJI_Board_TypeC_general/key/Makefile&quot;  VERBOSE=1 example_key_DJI_Board_TypeC_general_typeC.elf/fast"/>
+					<CompileFile command="D:/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/examples/DJI_Board_TypeC_general/key/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/examples/DJI_Board_TypeC_general/key/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/examples/DJI_Board_TypeC_general/key/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/algorithm/CMakeFiles/DJI_Board_TypeC_general_algorithm.dir/__/third_party/MahonyAHRS/src/MahonyAHRS.c.obj">
+			<Option target="example_key_DJI_Board_TypeC_general_typeC.elf"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/algorithm/CMakeFiles/DJI_Board_TypeC_general_algorithm.dir/__/third_party/QuaternionEKF/src/QEKF_userlib.c.obj">
+			<Option target="example_key_DJI_Board_TypeC_general_typeC.elf"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/algorithm/CMakeFiles/DJI_Board_TypeC_general_algorithm.dir/__/third_party/QuaternionEKF/src/QuaternionEKF.c.obj">
+			<Option target="example_key_DJI_Board_TypeC_general_typeC.elf"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/algorithm/CMakeFiles/DJI_Board_TypeC_general_algorithm.dir/__/third_party/QuaternionEKF/src/kalman_filter.c.obj">
+			<Option target="example_key_DJI_Board_TypeC_general_typeC.elf"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/algorithm/CMakeFiles/DJI_Board_TypeC_general_algorithm.dir/src/AHRS.cpp.obj">
+			<Option target="example_key_DJI_Board_TypeC_general_typeC.elf"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/algorithm/CMakeFiles/DJI_Board_TypeC_general_algorithm.dir/src/QEKF.cpp.obj">
+			<Option target="example_key_DJI_Board_TypeC_general_typeC.elf"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/algorithm/CMakeFiles/DJI_Board_TypeC_general_algorithm.dir/src/crc8.cpp.obj">
+			<Option target="example_key_DJI_Board_TypeC_general_typeC.elf"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/algorithm/CMakeFiles/DJI_Board_TypeC_general_algorithm.dir/src/pid.cpp.obj">
+			<Option target="example_key_DJI_Board_TypeC_general_typeC.elf"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/algorithm/CMakeFiles/DJI_Board_TypeC_general_algorithm.dir/src/power_limit.cpp.obj">
+			<Option target="example_key_DJI_Board_TypeC_general_typeC.elf"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/algorithm/CMakeFiles/DJI_Board_TypeC_general_algorithm.dir/src/utils.cpp.obj">
+			<Option target="example_key_DJI_Board_TypeC_general_typeC.elf"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/base/DJI_Board_TypeC_general/CMakeFiles/DJI_Board_TypeC_general.dir/Core/Src/adc.c.obj">
+			<Option target="example_key_DJI_Board_TypeC_general_typeC.elf"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/base/DJI_Board_TypeC_general/CMakeFiles/DJI_Board_TypeC_general.dir/Core/Src/can.c.obj">
+			<Option target="example_key_DJI_Board_TypeC_general_typeC.elf"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/base/DJI_Board_TypeC_general/CMakeFiles/DJI_Board_TypeC_general.dir/Core/Src/crc.c.obj">
+			<Option target="example_key_DJI_Board_TypeC_general_typeC.elf"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/base/DJI_Board_TypeC_general/CMakeFiles/DJI_Board_TypeC_general.dir/Core/Src/dma.c.obj">
+			<Option target="example_key_DJI_Board_TypeC_general_typeC.elf"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/base/DJI_Board_TypeC_general/CMakeFiles/DJI_Board_TypeC_general.dir/Core/Src/freertos.c.obj">
+			<Option target="example_key_DJI_Board_TypeC_general_typeC.elf"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/base/DJI_Board_TypeC_general/CMakeFiles/DJI_Board_TypeC_general.dir/Core/Src/gpio.c.obj">
+			<Option target="example_key_DJI_Board_TypeC_general_typeC.elf"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/base/DJI_Board_TypeC_general/CMakeFiles/DJI_Board_TypeC_general.dir/Core/Src/i2c.c.obj">
+			<Option target="example_key_DJI_Board_TypeC_general_typeC.elf"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/base/DJI_Board_TypeC_general/CMakeFiles/DJI_Board_TypeC_general.dir/Core/Src/main.c.obj">
+			<Option target="example_key_DJI_Board_TypeC_general_typeC.elf"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/base/DJI_Board_TypeC_general/CMakeFiles/DJI_Board_TypeC_general.dir/Core/Src/rng.c.obj">
+			<Option target="example_key_DJI_Board_TypeC_general_typeC.elf"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/base/DJI_Board_TypeC_general/CMakeFiles/DJI_Board_TypeC_general.dir/Core/Src/rtc.c.obj">
+			<Option target="example_key_DJI_Board_TypeC_general_typeC.elf"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/base/DJI_Board_TypeC_general/CMakeFiles/DJI_Board_TypeC_general.dir/Core/Src/spi.c.obj">
+			<Option target="example_key_DJI_Board_TypeC_general_typeC.elf"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/base/DJI_Board_TypeC_general/CMakeFiles/DJI_Board_TypeC_general.dir/Core/Src/stm32f4xx_hal_msp.c.obj">
+			<Option target="example_key_DJI_Board_TypeC_general_typeC.elf"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/base/DJI_Board_TypeC_general/CMakeFiles/DJI_Board_TypeC_general.dir/Core/Src/stm32f4xx_hal_timebase_tim.c.obj">
+			<Option target="example_key_DJI_Board_TypeC_general_typeC.elf"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/base/DJI_Board_TypeC_general/CMakeFiles/DJI_Board_TypeC_general.dir/Core/Src/stm32f4xx_it.c.obj">
+			<Option target="example_key_DJI_Board_TypeC_general_typeC.elf"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/base/DJI_Board_TypeC_general/CMakeFiles/DJI_Board_TypeC_general.dir/Core/Src/system_stm32f4xx.c.obj">
+			<Option target="example_key_DJI_Board_TypeC_general_typeC.elf"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/base/DJI_Board_TypeC_general/CMakeFiles/DJI_Board_TypeC_general.dir/Core/Src/tim.c.obj">
+			<Option target="example_key_DJI_Board_TypeC_general_typeC.elf"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/base/DJI_Board_TypeC_general/CMakeFiles/DJI_Board_TypeC_general.dir/Core/Src/usart.c.obj">
+			<Option target="example_key_DJI_Board_TypeC_general_typeC.elf"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/base/DJI_Board_TypeC_general/CMakeFiles/DJI_Board_TypeC_general.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj">
+			<Option target="example_key_DJI_Board_TypeC_general_typeC.elf"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/base/DJI_Board_TypeC_general/CMakeFiles/DJI_Board_TypeC_general.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c.obj">
+			<Option target="example_key_DJI_Board_TypeC_general_typeC.elf"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/base/DJI_Board_TypeC_general/CMakeFiles/DJI_Board_TypeC_general.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c.obj">
+			<Option target="example_key_DJI_Board_TypeC_general_typeC.elf"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/base/DJI_Board_TypeC_general/CMakeFiles/DJI_Board_TypeC_general.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.obj">
+			<Option target="example_key_DJI_Board_TypeC_general_typeC.elf"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/base/DJI_Board_TypeC_general/CMakeFiles/DJI_Board_TypeC_general.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj">
+			<Option target="example_key_DJI_Board_TypeC_general_typeC.elf"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/base/DJI_Board_TypeC_general/CMakeFiles/DJI_Board_TypeC_general.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_crc.c.obj">
+			<Option target="example_key_DJI_Board_TypeC_general_typeC.elf"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/base/DJI_Board_TypeC_general/CMakeFiles/DJI_Board_TypeC_general.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj">
+			<Option target="example_key_DJI_Board_TypeC_general_typeC.elf"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/base/DJI_Board_TypeC_general/CMakeFiles/DJI_Board_TypeC_general.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c.obj">
+			<Option target="example_key_DJI_Board_TypeC_general_typeC.elf"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/base/DJI_Board_TypeC_general/CMakeFiles/DJI_Board_TypeC_general.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c.obj">
+			<Option target="example_key_DJI_Board_TypeC_general_typeC.elf"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/base/DJI_Board_TypeC_general/CMakeFiles/DJI_Board_TypeC_general.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj">
+			<Option target="example_key_DJI_Board_TypeC_general_typeC.elf"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/base/DJI_Board_TypeC_general/CMakeFiles/DJI_Board_TypeC_general.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.obj">
+			<Option target="example_key_DJI_Board_TypeC_general_typeC.elf"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/base/DJI_Board_TypeC_general/CMakeFiles/DJI_Board_TypeC_general.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c.obj">
+			<Option target="example_key_DJI_Board_TypeC_general_typeC.elf"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/base/DJI_Board_TypeC_general/CMakeFiles/DJI_Board_TypeC_general.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj">
+			<Option target="example_key_DJI_Board_TypeC_general_typeC.elf"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/base/DJI_Board_TypeC_general/CMakeFiles/DJI_Board_TypeC_general.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c.obj">
+			<Option target="example_key_DJI_Board_TypeC_general_typeC.elf"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/base/DJI_Board_TypeC_general/CMakeFiles/DJI_Board_TypeC_general.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.c.obj">
+			<Option target="example_key_DJI_Board_TypeC_general_typeC.elf"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/base/DJI_Board_TypeC_general/CMakeFiles/DJI_Board_TypeC_general.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd.c.obj">
+			<Option target="example_key_DJI_Board_TypeC_general_typeC.elf"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/base/DJI_Board_TypeC_general/CMakeFiles/DJI_Board_TypeC_general.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd_ex.c.obj">
+			<Option target="example_key_DJI_Board_TypeC_general_typeC.elf"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/base/DJI_Board_TypeC_general/CMakeFiles/DJI_Board_TypeC_general.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.obj">
+			<Option target="example_key_DJI_Board_TypeC_general_typeC.elf"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/base/DJI_Board_TypeC_general/CMakeFiles/DJI_Board_TypeC_general.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c.obj">
+			<Option target="example_key_DJI_Board_TypeC_general_typeC.elf"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/base/DJI_Board_TypeC_general/CMakeFiles/DJI_Board_TypeC_general.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj">
+			<Option target="example_key_DJI_Board_TypeC_general_typeC.elf"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/base/DJI_Board_TypeC_general/CMakeFiles/DJI_Board_TypeC_general.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj">
+			<Option target="example_key_DJI_Board_TypeC_general_typeC.elf"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/base/DJI_Board_TypeC_general/CMakeFiles/DJI_Board_TypeC_general.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rng.c.obj">
+			<Option target="example_key_DJI_Board_TypeC_general_typeC.elf"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/base/DJI_Board_TypeC_general/CMakeFiles/DJI_Board_TypeC_general.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc.c.obj">
+			<Option target="example_key_DJI_Board_TypeC_general_typeC.elf"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/base/DJI_Board_TypeC_general/CMakeFiles/DJI_Board_TypeC_general.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc_ex.c.obj">
+			<Option target="example_key_DJI_Board_TypeC_general_typeC.elf"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/base/DJI_Board_TypeC_general/CMakeFiles/DJI_Board_TypeC_general.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.obj">
+			<Option target="example_key_DJI_Board_TypeC_general_typeC.elf"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/base/DJI_Board_TypeC_general/CMakeFiles/DJI_Board_TypeC_general.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj">
+			<Option target="example_key_DJI_Board_TypeC_general_typeC.elf"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/base/DJI_Board_TypeC_general/CMakeFiles/DJI_Board_TypeC_general.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj">
+			<Option target="example_key_DJI_Board_TypeC_general_typeC.elf"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/base/DJI_Board_TypeC_general/CMakeFiles/DJI_Board_TypeC_general.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj">
+			<Option target="example_key_DJI_Board_TypeC_general_typeC.elf"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/base/DJI_Board_TypeC_general/CMakeFiles/DJI_Board_TypeC_general.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_adc.c.obj">
+			<Option target="example_key_DJI_Board_TypeC_general_typeC.elf"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/base/DJI_Board_TypeC_general/CMakeFiles/DJI_Board_TypeC_general.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usb.c.obj">
+			<Option target="example_key_DJI_Board_TypeC_general_typeC.elf"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/base/DJI_Board_TypeC_general/CMakeFiles/DJI_Board_TypeC_general.dir/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c.obj">
+			<Option target="example_key_DJI_Board_TypeC_general_typeC.elf"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/base/DJI_Board_TypeC_general/CMakeFiles/DJI_Board_TypeC_general.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c.obj">
+			<Option target="example_key_DJI_Board_TypeC_general_typeC.elf"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/base/DJI_Board_TypeC_general/CMakeFiles/DJI_Board_TypeC_general.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c.obj">
+			<Option target="example_key_DJI_Board_TypeC_general_typeC.elf"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/base/DJI_Board_TypeC_general/CMakeFiles/DJI_Board_TypeC_general.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c.obj">
+			<Option target="example_key_DJI_Board_TypeC_general_typeC.elf"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/base/DJI_Board_TypeC_general/CMakeFiles/DJI_Board_TypeC_general.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c.obj">
+			<Option target="example_key_DJI_Board_TypeC_general_typeC.elf"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/base/DJI_Board_TypeC_general/CMakeFiles/DJI_Board_TypeC_general.dir/Middlewares/Third_Party/FreeRTOS/Source/croutine.c.obj">
+			<Option target="example_key_DJI_Board_TypeC_general_typeC.elf"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/base/DJI_Board_TypeC_general/CMakeFiles/DJI_Board_TypeC_general.dir/Middlewares/Third_Party/FreeRTOS/Source/event_groups.c.obj">
+			<Option target="example_key_DJI_Board_TypeC_general_typeC.elf"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/base/DJI_Board_TypeC_general/CMakeFiles/DJI_Board_TypeC_general.dir/Middlewares/Third_Party/FreeRTOS/Source/list.c.obj">
+			<Option target="example_key_DJI_Board_TypeC_general_typeC.elf"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/base/DJI_Board_TypeC_general/CMakeFiles/DJI_Board_TypeC_general.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.obj">
+			<Option target="example_key_DJI_Board_TypeC_general_typeC.elf"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/base/DJI_Board_TypeC_general/CMakeFiles/DJI_Board_TypeC_general.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj">
+			<Option target="example_key_DJI_Board_TypeC_general_typeC.elf"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/base/DJI_Board_TypeC_general/CMakeFiles/DJI_Board_TypeC_general.dir/Middlewares/Third_Party/FreeRTOS/Source/queue.c.obj">
+			<Option target="example_key_DJI_Board_TypeC_general_typeC.elf"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/base/DJI_Board_TypeC_general/CMakeFiles/DJI_Board_TypeC_general.dir/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c.obj">
+			<Option target="example_key_DJI_Board_TypeC_general_typeC.elf"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/base/DJI_Board_TypeC_general/CMakeFiles/DJI_Board_TypeC_general.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj">
+			<Option target="example_key_DJI_Board_TypeC_general_typeC.elf"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/base/DJI_Board_TypeC_general/CMakeFiles/DJI_Board_TypeC_general.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj">
+			<Option target="example_key_DJI_Board_TypeC_general_typeC.elf"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/base/DJI_Board_TypeC_general/CMakeFiles/DJI_Board_TypeC_general.dir/USB_DEVICE/App/usb_device.c.obj">
+			<Option target="example_key_DJI_Board_TypeC_general_typeC.elf"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/base/DJI_Board_TypeC_general/CMakeFiles/DJI_Board_TypeC_general.dir/USB_DEVICE/App/usbd_cdc_if.c.obj">
+			<Option target="example_key_DJI_Board_TypeC_general_typeC.elf"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/base/DJI_Board_TypeC_general/CMakeFiles/DJI_Board_TypeC_general.dir/USB_DEVICE/App/usbd_desc.c.obj">
+			<Option target="example_key_DJI_Board_TypeC_general_typeC.elf"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/base/DJI_Board_TypeC_general/CMakeFiles/DJI_Board_TypeC_general.dir/USB_DEVICE/Target/usbd_conf.c.obj">
+			<Option target="example_key_DJI_Board_TypeC_general_typeC.elf"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/base/DJI_Board_TypeC_general/CMakeFiles/DJI_Board_TypeC_general.dir/startup_stm32f407xx.s.obj">
+			<Option target="example_key_DJI_Board_TypeC_general_typeC.elf"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/components/CMakeFiles/DJI_Board_TypeC_general_components.dir/src/chassis.cpp.obj">
+			<Option target="example_key_DJI_Board_TypeC_general_typeC.elf"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/components/CMakeFiles/DJI_Board_TypeC_general_components.dir/src/fric.cpp.obj">
+			<Option target="example_key_DJI_Board_TypeC_general_typeC.elf"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/components/CMakeFiles/DJI_Board_TypeC_general_components.dir/src/gimbal.cpp.obj">
+			<Option target="example_key_DJI_Board_TypeC_general_typeC.elf"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/components/CMakeFiles/DJI_Board_TypeC_general_components.dir/src/user_interface.cpp.obj">
+			<Option target="example_key_DJI_Board_TypeC_general_typeC.elf"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/drivers/CMakeFiles/DJI_Board_TypeC_general_drivers.dir/DJI_Board_TypeC/src/bsp_batteryvol.cpp.obj">
+			<Option target="example_key_DJI_Board_TypeC_general_typeC.elf"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/drivers/CMakeFiles/DJI_Board_TypeC_general_drivers.dir/DJI_Board_TypeC/src/bsp_heater.cpp.obj">
+			<Option target="example_key_DJI_Board_TypeC_general_typeC.elf"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/drivers/CMakeFiles/DJI_Board_TypeC_general_drivers.dir/DJI_Board_TypeC/src/bsp_imu.cpp.obj">
+			<Option target="example_key_DJI_Board_TypeC_general_typeC.elf"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/drivers/CMakeFiles/DJI_Board_TypeC_general_drivers.dir/DJI_Board_TypeC/src/bsp_tempreture.cpp.obj">
+			<Option target="example_key_DJI_Board_TypeC_general_typeC.elf"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/drivers/CMakeFiles/DJI_Board_TypeC_general_drivers.dir/__/third_party/crc_check/src/crc_check.c.obj">
+			<Option target="example_key_DJI_Board_TypeC_general_typeC.elf"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/drivers/CMakeFiles/DJI_Board_TypeC_general_drivers.dir/src/BMI088.cpp.obj">
+			<Option target="example_key_DJI_Board_TypeC_general_typeC.elf"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/drivers/CMakeFiles/DJI_Board_TypeC_general_drivers.dir/src/DMmotor.cpp.obj">
+			<Option target="example_key_DJI_Board_TypeC_general_typeC.elf"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/drivers/CMakeFiles/DJI_Board_TypeC_general_drivers.dir/src/IST8310.cpp.obj">
+			<Option target="example_key_DJI_Board_TypeC_general_typeC.elf"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/drivers/CMakeFiles/DJI_Board_TypeC_general_drivers.dir/src/MPU6500.cpp.obj">
+			<Option target="example_key_DJI_Board_TypeC_general_typeC.elf"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/drivers/CMakeFiles/DJI_Board_TypeC_general_drivers.dir/src/MotorCanBase.cpp.obj">
+			<Option target="example_key_DJI_Board_TypeC_general_typeC.elf"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/drivers/CMakeFiles/DJI_Board_TypeC_general_drivers.dir/src/MotorPWMBase.cpp.obj">
+			<Option target="example_key_DJI_Board_TypeC_general_typeC.elf"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/drivers/CMakeFiles/DJI_Board_TypeC_general_drivers.dir/src/buzzer.cpp.obj">
+			<Option target="example_key_DJI_Board_TypeC_general_typeC.elf"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/drivers/CMakeFiles/DJI_Board_TypeC_general_drivers.dir/src/can_bridge.cpp.obj">
+			<Option target="example_key_DJI_Board_TypeC_general_typeC.elf"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/drivers/CMakeFiles/DJI_Board_TypeC_general_drivers.dir/src/connection_driver.cpp.obj">
+			<Option target="example_key_DJI_Board_TypeC_general_typeC.elf"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/drivers/CMakeFiles/DJI_Board_TypeC_general_drivers.dir/src/cybergear.cpp.obj">
+			<Option target="example_key_DJI_Board_TypeC_general_typeC.elf"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/drivers/CMakeFiles/DJI_Board_TypeC_general_drivers.dir/src/dbus.cpp.obj">
+			<Option target="example_key_DJI_Board_TypeC_general_typeC.elf"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/drivers/CMakeFiles/DJI_Board_TypeC_general_drivers.dir/src/heater.cpp.obj">
+			<Option target="example_key_DJI_Board_TypeC_general_typeC.elf"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/drivers/CMakeFiles/DJI_Board_TypeC_general_drivers.dir/src/oled.cpp.obj">
+			<Option target="example_key_DJI_Board_TypeC_general_typeC.elf"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/drivers/CMakeFiles/DJI_Board_TypeC_general_drivers.dir/src/protocol.cpp.obj">
+			<Option target="example_key_DJI_Board_TypeC_general_typeC.elf"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/drivers/CMakeFiles/DJI_Board_TypeC_general_drivers.dir/src/rgb.cpp.obj">
+			<Option target="example_key_DJI_Board_TypeC_general_typeC.elf"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/drivers/CMakeFiles/DJI_Board_TypeC_general_drivers.dir/src/sbus.cpp.obj">
+			<Option target="example_key_DJI_Board_TypeC_general_typeC.elf"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/drivers/CMakeFiles/DJI_Board_TypeC_general_drivers.dir/src/supercap.cpp.obj">
+			<Option target="example_key_DJI_Board_TypeC_general_typeC.elf"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/drivers/CMakeFiles/DJI_Board_TypeC_general_drivers.dir/src/wit_protocol.cpp.obj">
+			<Option target="example_key_DJI_Board_TypeC_general_typeC.elf"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/drivers/CMakeFiles/DJI_Board_TypeC_general_drivers.dir/src/ws2812b_spi.cpp.obj">
+			<Option target="example_key_DJI_Board_TypeC_general_typeC.elf"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/platform/stm32f4/CMakeFiles/DJI_Board_TypeC_general_platform.dir/__/__/third_party/printf/src/printf.c.obj">
+			<Option target="example_key_DJI_Board_TypeC_general_typeC.elf"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/platform/stm32f4/CMakeFiles/DJI_Board_TypeC_general_platform.dir/src/bsp_adc.cpp.obj">
+			<Option target="example_key_DJI_Board_TypeC_general_typeC.elf"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/platform/stm32f4/CMakeFiles/DJI_Board_TypeC_general_platform.dir/src/bsp_can.cpp.obj">
+			<Option target="example_key_DJI_Board_TypeC_general_typeC.elf"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/platform/stm32f4/CMakeFiles/DJI_Board_TypeC_general_platform.dir/src/bsp_dwt.cpp.obj">
+			<Option target="example_key_DJI_Board_TypeC_general_typeC.elf"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/platform/stm32f4/CMakeFiles/DJI_Board_TypeC_general_platform.dir/src/bsp_error_handler.cpp.obj">
+			<Option target="example_key_DJI_Board_TypeC_general_typeC.elf"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/platform/stm32f4/CMakeFiles/DJI_Board_TypeC_general_platform.dir/src/bsp_gpio.cpp.obj">
+			<Option target="example_key_DJI_Board_TypeC_general_typeC.elf"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/platform/stm32f4/CMakeFiles/DJI_Board_TypeC_general_platform.dir/src/bsp_i2c.cpp.obj">
+			<Option target="example_key_DJI_Board_TypeC_general_typeC.elf"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/platform/stm32f4/CMakeFiles/DJI_Board_TypeC_general_platform.dir/src/bsp_memory.cpp.obj">
+			<Option target="example_key_DJI_Board_TypeC_general_typeC.elf"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/platform/stm32f4/CMakeFiles/DJI_Board_TypeC_general_platform.dir/src/bsp_os.cpp.obj">
+			<Option target="example_key_DJI_Board_TypeC_general_typeC.elf"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/platform/stm32f4/CMakeFiles/DJI_Board_TypeC_general_platform.dir/src/bsp_print.cpp.obj">
+			<Option target="example_key_DJI_Board_TypeC_general_typeC.elf"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/platform/stm32f4/CMakeFiles/DJI_Board_TypeC_general_platform.dir/src/bsp_pwm.cpp.obj">
+			<Option target="example_key_DJI_Board_TypeC_general_typeC.elf"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/platform/stm32f4/CMakeFiles/DJI_Board_TypeC_general_platform.dir/src/bsp_spi.cpp.obj">
+			<Option target="example_key_DJI_Board_TypeC_general_typeC.elf"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/platform/stm32f4/CMakeFiles/DJI_Board_TypeC_general_platform.dir/src/bsp_thread.cpp.obj">
+			<Option target="example_key_DJI_Board_TypeC_general_typeC.elf"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/platform/stm32f4/CMakeFiles/DJI_Board_TypeC_general_platform.dir/src/bsp_uart.cpp.obj">
+			<Option target="example_key_DJI_Board_TypeC_general_typeC.elf"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32/boards/platform/stm32f4/CMakeFiles/DJI_Board_TypeC_general_platform.dir/src/bsp_usb.cpp.obj">
+			<Option target="example_key_DJI_Board_TypeC_general_typeC.elf"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/examples/DJI_Board_TypeC_general/key/main.cpp">
+			<Option target="example_key_DJI_Board_TypeC_general_typeC.elf"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/module_test/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\module_test\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/module_test/chassis_debug/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\module_test\chassis_debug\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/module_test/gimbal/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\module_test\gimbal\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/module_test/sensor_test/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\module_test\sensor_test\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/module_test/sensor_test/MPU6050_test/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\module_test\sensor_test\MPU6050_test\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/module_test/chassis_main/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\module_test\chassis_main\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/programs/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\programs\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/programs/DGStandard/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\programs\DGStandard\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/programs/DGStandard/chassis/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\programs\DGStandard\chassis\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/programs/DGStandard/gimbal/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\programs\DGStandard\gimbal\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\boards\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\boards\base\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/DJI_Board_TypeA_general/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\boards\base\DJI_Board_TypeA_general\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/DJI_Board_TypeC_general/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\boards\base\DJI_Board_TypeC_general\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/DM_MC01_general/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\boards\base\DM_MC01_general\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/DM_MC02_general/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\boards\base\DM_MC02_general\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/base/F103_Nano_general/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\boards\base\F103_Nano_general\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/platform/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\boards\platform\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/platform/stm32f1/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\boards\platform\stm32f1\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/platform/stm32f4/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\boards\platform\stm32f4\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/platform/stm32h7/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\boards\platform\stm32h7\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/algorithm/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\boards\algorithm\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/drivers/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\boards\drivers\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/components/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\boards\components\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/boards/third_party/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\boards\third_party\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/examples/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\examples\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/examples/DJI_Board_TypeA_general/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\examples\DJI_Board_TypeA_general\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/examples/DJI_Board_TypeA_general/MPU6500/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\examples\DJI_Board_TypeA_general\MPU6500\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/examples/DJI_Board_TypeA_general/buzzer/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\examples\DJI_Board_TypeA_general\buzzer\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/examples/DJI_Board_TypeA_general/can_bridge/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\examples\DJI_Board_TypeA_general\can_bridge\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/examples/DJI_Board_TypeA_general/chassis/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\examples\DJI_Board_TypeA_general\chassis\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/examples/DJI_Board_TypeA_general/dbus/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\examples\DJI_Board_TypeA_general\dbus\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/examples/DJI_Board_TypeA_general/fatfs/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\examples\DJI_Board_TypeA_general\fatfs\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/examples/DJI_Board_TypeA_general/gimbal/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\examples\DJI_Board_TypeA_general\gimbal\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/examples/DJI_Board_TypeA_general/led_flow/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\examples\DJI_Board_TypeA_general\led_flow\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/examples/DJI_Board_TypeA_general/motor/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\examples\DJI_Board_TypeA_general\motor\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/examples/DJI_Board_TypeA_general/referee/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\examples\DJI_Board_TypeA_general\referee\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/examples/DJI_Board_TypeA_general/witimu/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\examples\DJI_Board_TypeA_general\witimu\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/examples/DJI_Board_TypeC_general/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\examples\DJI_Board_TypeC_general\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/examples/DJI_Board_TypeC_general/BMI088/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\examples\DJI_Board_TypeC_general\BMI088\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/examples/DJI_Board_TypeC_general/buzzer/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\examples\DJI_Board_TypeC_general\buzzer\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/examples/DJI_Board_TypeC_general/can_bridge/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\examples\DJI_Board_TypeC_general\can_bridge\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/examples/DJI_Board_TypeC_general/chassis/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\examples\DJI_Board_TypeC_general\chassis\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/examples/DJI_Board_TypeC_general/cybergear/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\examples\DJI_Board_TypeC_general\cybergear\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/examples/DJI_Board_TypeC_general/dbus/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\examples\DJI_Board_TypeC_general\dbus\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/examples/DJI_Board_TypeC_general/gimbal/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\examples\DJI_Board_TypeC_general\gimbal\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/examples/DJI_Board_TypeC_general/imu/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\examples\DJI_Board_TypeC_general\imu\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/examples/DJI_Board_TypeC_general/ist8310/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\examples\DJI_Board_TypeC_general\ist8310\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/examples/DJI_Board_TypeC_general/key/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\examples\DJI_Board_TypeC_general\key\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/examples/DJI_Board_TypeC_general/led/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\examples\DJI_Board_TypeC_general\led\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/examples/DJI_Board_TypeC_general/motor/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\examples\DJI_Board_TypeC_general\motor\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/examples/DJI_Board_TypeC_general/oled/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\examples\DJI_Board_TypeC_general\oled\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/examples/DJI_Board_TypeC_general/onboard_temp/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\examples\DJI_Board_TypeC_general\onboard_temp\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/examples/DJI_Board_TypeC_general/referee/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\examples\DJI_Board_TypeC_general\referee\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/examples/DJI_Board_TypeC_general/sbus/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\examples\DJI_Board_TypeC_general\sbus\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/examples/DJI_Board_TypeC_general/supercap/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\examples\DJI_Board_TypeC_general\supercap\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/examples/DJI_Board_TypeC_general/usb/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\examples\DJI_Board_TypeC_general\usb\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/examples/DJI_Board_TypeC_general/witimu/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\examples\DJI_Board_TypeC_general\witimu\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/examples/DM_MC01_general/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\examples\DM_MC01_general\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/examples/DM_MC01_general/BMI088/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\examples\DM_MC01_general\BMI088\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/examples/DM_MC01_general/buzzer/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\examples\DM_MC01_general\buzzer\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/examples/DM_MC01_general/can_bridge/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\examples\DM_MC01_general\can_bridge\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/examples/DM_MC01_general/chassis/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\examples\DM_MC01_general\chassis\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/examples/DM_MC01_general/dbus/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\examples\DM_MC01_general\dbus\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/examples/DM_MC01_general/led/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\examples\DM_MC01_general\led\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/examples/DM_MC01_general/motor/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\examples\DM_MC01_general\motor\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/examples/DM_MC01_general/onboard_temp/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\examples\DM_MC01_general\onboard_temp\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/examples/DM_MC02_general/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\examples\DM_MC02_general\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/examples/DM_MC02_general/BMI088/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\examples\DM_MC02_general\BMI088\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/examples/DM_MC02_general/buzzer/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\examples\DM_MC02_general\buzzer\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/examples/DM_MC02_general/can_bridge/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\examples\DM_MC02_general\can_bridge\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/examples/DM_MC02_general/dbus/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\examples\DM_MC02_general\dbus\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/examples/DM_MC02_general/led/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\examples\DM_MC02_general\led\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/examples/DM_MC02_general/motor/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\examples\DM_MC02_general\motor\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/examples/DM_MC02_general/uart/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\examples\DM_MC02_general\uart\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/examples/F103_Nano_general/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\examples\F103_Nano_general\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/examples/F103_Nano_general/buzzer/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\examples\F103_Nano_general\buzzer\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/examples/F103_Nano_general/led/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\examples\F103_Nano_general\led\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/examples/F103_Nano_general/motor/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\examples\F103_Nano_general\motor\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/examples/F103_Nano_general/oled/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\examples\F103_Nano_general\oled\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake/arm_toolchain.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake/build_helper.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake/clang_format.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake/doxygen.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

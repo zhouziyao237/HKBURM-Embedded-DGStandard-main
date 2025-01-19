@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "boards/base/DJI_Board_TypeC_general",
+		"source" : "boards/base/DJI_Board_TypeC_general"
+	}
+}

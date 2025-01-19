@@ -1,0 +1,1533 @@
+{
+	"inputs" : 
+	[
+		{
+			"path" : "CMakeLists.txt"
+		},
+		{
+			"path" : "cmake/arm_toolchain.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeForceCompiler.cmake"
+		},
+		{
+			"path" : "cmake/build_helper.cmake"
+		},
+		{
+			"path" : "cmake/clang_format.cmake"
+		},
+		{
+			"path" : "cmake/doxygen.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/CMakeFiles/3.24.2/CMakeSystem.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeSystemSpecificInitialize.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/CMakeFiles/3.24.2/CMakeCCompiler.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/CMakeFiles/3.24.2/CMakeCXXCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeSystemSpecificInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeGenericSystem.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeInitializeConfigs.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/Generic.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeFindCodeBlocks.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeExtraGeneratorDetermineCompilerMacrosAndIncludeDirs.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/ProcessorCount.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeCInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeLanguageInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU-C.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/CMakeCommonCompilerMacros.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/Generic.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeCommonLanguageInclude.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeCXXInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeLanguageInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU-CXX.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/Generic.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeCommonLanguageInclude.cmake"
+		},
+		{
+			"path" : "module_test/CMakeLists.txt"
+		},
+		{
+			"path" : "module_test/gimbal/CMakeLists.txt"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/CMakeFiles/3.24.2/CMakeASMCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeASMInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU-ASM.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU.cmake"
+		},
+		{
+			"path" : "module_test/chassis_debug/CMakeLists.txt"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/CMakeFiles/3.24.2/CMakeASMCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeASMInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU-ASM.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU.cmake"
+		},
+		{
+			"path" : "module_test/chassis_main/CMakeLists.txt"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/CMakeFiles/3.24.2/CMakeASMCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeASMInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU-ASM.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU.cmake"
+		},
+		{
+			"path" : "module_test/sensor_test/CMakeLists.txt"
+		},
+		{
+			"path" : "module_test/sensor_test/MPU6050_test/CMakeLists.txt"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/CMakeFiles/3.24.2/CMakeASMCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeASMInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU-ASM.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU.cmake"
+		},
+		{
+			"path" : "boards/CMakeLists.txt"
+		},
+		{
+			"path" : "boards/base/CMakeLists.txt"
+		},
+		{
+			"path" : "boards/base/DJI_Board_TypeC_general/CMakeLists.txt"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/CMakeFiles/3.24.2/CMakeASMCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeASMInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU-ASM.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU.cmake"
+		},
+		{
+			"path" : "boards/base/DM_MC01_general/CMakeLists.txt"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/CMakeFiles/3.24.2/CMakeASMCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeASMInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU-ASM.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU.cmake"
+		},
+		{
+			"path" : "boards/base/DJI_Board_TypeA_general/CMakeLists.txt"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/CMakeFiles/3.24.2/CMakeASMCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeASMInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU-ASM.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU.cmake"
+		},
+		{
+			"path" : "boards/base/F103_Nano_general/CMakeLists.txt"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/CMakeFiles/3.24.2/CMakeASMCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeASMInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU-ASM.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU.cmake"
+		},
+		{
+			"path" : "boards/base/DM_MC02_general/CMakeLists.txt"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/CMakeFiles/3.24.2/CMakeASMCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeASMInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU-ASM.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU.cmake"
+		},
+		{
+			"path" : "boards/platform/CMakeLists.txt"
+		},
+		{
+			"path" : "boards/platform/stm32f1/CMakeLists.txt"
+		},
+		{
+			"path" : "boards/platform/stm32f4/CMakeLists.txt"
+		},
+		{
+			"path" : "boards/platform/stm32h7/CMakeLists.txt"
+		},
+		{
+			"path" : "boards/algorithm/CMakeLists.txt"
+		},
+		{
+			"path" : "boards/drivers/CMakeLists.txt"
+		},
+		{
+			"path" : "boards/components/CMakeLists.txt"
+		},
+		{
+			"path" : "boards/third_party/CMakeLists.txt"
+		},
+		{
+			"path" : "programs/CMakeLists.txt"
+		},
+		{
+			"path" : "programs/DGStandard/CMakeLists.txt"
+		},
+		{
+			"path" : "programs/DGStandard/gimbal/CMakeLists.txt"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/CMakeFiles/3.24.2/CMakeASMCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeASMInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU-ASM.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU.cmake"
+		},
+		{
+			"path" : "programs/DGStandard/chassis/CMakeLists.txt"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/CMakeFiles/3.24.2/CMakeASMCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeASMInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU-ASM.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU.cmake"
+		},
+		{
+			"path" : "examples/CMakeLists.txt"
+		},
+		{
+			"path" : "examples/DJI_Board_TypeC_general/CMakeLists.txt"
+		},
+		{
+			"path" : "examples/DJI_Board_TypeC_general/BMI088/CMakeLists.txt"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/CMakeFiles/3.24.2/CMakeASMCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeASMInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU-ASM.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU.cmake"
+		},
+		{
+			"path" : "examples/DJI_Board_TypeC_general/buzzer/CMakeLists.txt"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/CMakeFiles/3.24.2/CMakeASMCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeASMInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU-ASM.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU.cmake"
+		},
+		{
+			"path" : "examples/DJI_Board_TypeC_general/can_bridge/CMakeLists.txt"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/CMakeFiles/3.24.2/CMakeASMCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeASMInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU-ASM.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU.cmake"
+		},
+		{
+			"path" : "examples/DJI_Board_TypeC_general/chassis/CMakeLists.txt"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/CMakeFiles/3.24.2/CMakeASMCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeASMInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU-ASM.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU.cmake"
+		},
+		{
+			"path" : "examples/DJI_Board_TypeC_general/cybergear/CMakeLists.txt"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/CMakeFiles/3.24.2/CMakeASMCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeASMInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU-ASM.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU.cmake"
+		},
+		{
+			"path" : "examples/DJI_Board_TypeC_general/dbus/CMakeLists.txt"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/CMakeFiles/3.24.2/CMakeASMCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeASMInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU-ASM.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU.cmake"
+		},
+		{
+			"path" : "examples/DJI_Board_TypeC_general/gimbal/CMakeLists.txt"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/CMakeFiles/3.24.2/CMakeASMCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeASMInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU-ASM.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU.cmake"
+		},
+		{
+			"path" : "examples/DJI_Board_TypeC_general/imu/CMakeLists.txt"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/CMakeFiles/3.24.2/CMakeASMCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeASMInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU-ASM.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU.cmake"
+		},
+		{
+			"path" : "examples/DJI_Board_TypeC_general/ist8310/CMakeLists.txt"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/CMakeFiles/3.24.2/CMakeASMCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeASMInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU-ASM.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU.cmake"
+		},
+		{
+			"path" : "examples/DJI_Board_TypeC_general/key/CMakeLists.txt"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/CMakeFiles/3.24.2/CMakeASMCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeASMInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU-ASM.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU.cmake"
+		},
+		{
+			"path" : "examples/DJI_Board_TypeC_general/led/CMakeLists.txt"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/CMakeFiles/3.24.2/CMakeASMCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeASMInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU-ASM.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU.cmake"
+		},
+		{
+			"path" : "examples/DJI_Board_TypeC_general/motor/CMakeLists.txt"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/CMakeFiles/3.24.2/CMakeASMCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeASMInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU-ASM.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU.cmake"
+		},
+		{
+			"path" : "examples/DJI_Board_TypeC_general/oled/CMakeLists.txt"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/CMakeFiles/3.24.2/CMakeASMCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeASMInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU-ASM.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU.cmake"
+		},
+		{
+			"path" : "examples/DJI_Board_TypeC_general/onboard_temp/CMakeLists.txt"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/CMakeFiles/3.24.2/CMakeASMCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeASMInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU-ASM.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU.cmake"
+		},
+		{
+			"path" : "examples/DJI_Board_TypeC_general/referee/CMakeLists.txt"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/CMakeFiles/3.24.2/CMakeASMCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeASMInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU-ASM.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU.cmake"
+		},
+		{
+			"path" : "examples/DJI_Board_TypeC_general/sbus/CMakeLists.txt"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/CMakeFiles/3.24.2/CMakeASMCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeASMInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU-ASM.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU.cmake"
+		},
+		{
+			"path" : "examples/DJI_Board_TypeC_general/witimu/CMakeLists.txt"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/CMakeFiles/3.24.2/CMakeASMCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeASMInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU-ASM.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU.cmake"
+		},
+		{
+			"path" : "examples/DJI_Board_TypeC_general/usb/CMakeLists.txt"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/CMakeFiles/3.24.2/CMakeASMCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeASMInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU-ASM.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU.cmake"
+		},
+		{
+			"path" : "examples/DJI_Board_TypeC_general/supercap/CMakeLists.txt"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/CMakeFiles/3.24.2/CMakeASMCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeASMInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU-ASM.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU.cmake"
+		},
+		{
+			"path" : "examples/DJI_Board_TypeA_general/CMakeLists.txt"
+		},
+		{
+			"path" : "examples/DJI_Board_TypeA_general/buzzer/CMakeLists.txt"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/CMakeFiles/3.24.2/CMakeASMCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeASMInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU-ASM.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU.cmake"
+		},
+		{
+			"path" : "examples/DJI_Board_TypeA_general/can_bridge/CMakeLists.txt"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/CMakeFiles/3.24.2/CMakeASMCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeASMInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU-ASM.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU.cmake"
+		},
+		{
+			"path" : "examples/DJI_Board_TypeA_general/chassis/CMakeLists.txt"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/CMakeFiles/3.24.2/CMakeASMCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeASMInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU-ASM.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU.cmake"
+		},
+		{
+			"path" : "examples/DJI_Board_TypeA_general/dbus/CMakeLists.txt"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/CMakeFiles/3.24.2/CMakeASMCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeASMInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU-ASM.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU.cmake"
+		},
+		{
+			"path" : "examples/DJI_Board_TypeA_general/MPU6500/CMakeLists.txt"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/CMakeFiles/3.24.2/CMakeASMCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeASMInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU-ASM.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU.cmake"
+		},
+		{
+			"path" : "examples/DJI_Board_TypeA_general/fatfs/CMakeLists.txt"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/CMakeFiles/3.24.2/CMakeASMCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeASMInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU-ASM.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU.cmake"
+		},
+		{
+			"path" : "examples/DJI_Board_TypeA_general/led_flow/CMakeLists.txt"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/CMakeFiles/3.24.2/CMakeASMCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeASMInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU-ASM.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU.cmake"
+		},
+		{
+			"path" : "examples/DJI_Board_TypeA_general/gimbal/CMakeLists.txt"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/CMakeFiles/3.24.2/CMakeASMCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeASMInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU-ASM.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU.cmake"
+		},
+		{
+			"path" : "examples/DJI_Board_TypeA_general/motor/CMakeLists.txt"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/CMakeFiles/3.24.2/CMakeASMCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeASMInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU-ASM.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU.cmake"
+		},
+		{
+			"path" : "examples/DJI_Board_TypeA_general/witimu/CMakeLists.txt"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/CMakeFiles/3.24.2/CMakeASMCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeASMInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU-ASM.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU.cmake"
+		},
+		{
+			"path" : "examples/DJI_Board_TypeA_general/referee/CMakeLists.txt"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/CMakeFiles/3.24.2/CMakeASMCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeASMInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU-ASM.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU.cmake"
+		},
+		{
+			"path" : "examples/DM_MC01_general/CMakeLists.txt"
+		},
+		{
+			"path" : "examples/DM_MC01_general/BMI088/CMakeLists.txt"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/CMakeFiles/3.24.2/CMakeASMCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeASMInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU-ASM.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU.cmake"
+		},
+		{
+			"path" : "examples/DM_MC01_general/buzzer/CMakeLists.txt"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/CMakeFiles/3.24.2/CMakeASMCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeASMInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU-ASM.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU.cmake"
+		},
+		{
+			"path" : "examples/DM_MC01_general/can_bridge/CMakeLists.txt"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/CMakeFiles/3.24.2/CMakeASMCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeASMInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU-ASM.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU.cmake"
+		},
+		{
+			"path" : "examples/DM_MC01_general/chassis/CMakeLists.txt"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/CMakeFiles/3.24.2/CMakeASMCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeASMInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU-ASM.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU.cmake"
+		},
+		{
+			"path" : "examples/DM_MC01_general/dbus/CMakeLists.txt"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/CMakeFiles/3.24.2/CMakeASMCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeASMInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU-ASM.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU.cmake"
+		},
+		{
+			"path" : "examples/DM_MC01_general/led/CMakeLists.txt"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/CMakeFiles/3.24.2/CMakeASMCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeASMInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU-ASM.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU.cmake"
+		},
+		{
+			"path" : "examples/DM_MC01_general/motor/CMakeLists.txt"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/CMakeFiles/3.24.2/CMakeASMCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeASMInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU-ASM.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU.cmake"
+		},
+		{
+			"path" : "examples/DM_MC01_general/onboard_temp/CMakeLists.txt"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/CMakeFiles/3.24.2/CMakeASMCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeASMInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU-ASM.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU.cmake"
+		},
+		{
+			"path" : "examples/F103_Nano_general/CMakeLists.txt"
+		},
+		{
+			"path" : "examples/F103_Nano_general/buzzer/CMakeLists.txt"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/CMakeFiles/3.24.2/CMakeASMCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeASMInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU-ASM.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU.cmake"
+		},
+		{
+			"path" : "examples/F103_Nano_general/led/CMakeLists.txt"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/CMakeFiles/3.24.2/CMakeASMCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeASMInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU-ASM.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU.cmake"
+		},
+		{
+			"path" : "examples/F103_Nano_general/motor/CMakeLists.txt"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/CMakeFiles/3.24.2/CMakeASMCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeASMInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU-ASM.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU.cmake"
+		},
+		{
+			"path" : "examples/F103_Nano_general/oled/CMakeLists.txt"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/CMakeFiles/3.24.2/CMakeASMCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeASMInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU-ASM.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU.cmake"
+		},
+		{
+			"path" : "examples/DM_MC02_general/CMakeLists.txt"
+		},
+		{
+			"path" : "examples/DM_MC02_general/BMI088/CMakeLists.txt"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/CMakeFiles/3.24.2/CMakeASMCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeASMInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU-ASM.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU.cmake"
+		},
+		{
+			"path" : "examples/DM_MC02_general/buzzer/CMakeLists.txt"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/CMakeFiles/3.24.2/CMakeASMCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeASMInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU-ASM.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU.cmake"
+		},
+		{
+			"path" : "examples/DM_MC02_general/can_bridge/CMakeLists.txt"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/CMakeFiles/3.24.2/CMakeASMCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeASMInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU-ASM.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU.cmake"
+		},
+		{
+			"path" : "examples/DM_MC02_general/dbus/CMakeLists.txt"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/CMakeFiles/3.24.2/CMakeASMCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeASMInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU-ASM.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU.cmake"
+		},
+		{
+			"path" : "examples/DM_MC02_general/led/CMakeLists.txt"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/CMakeFiles/3.24.2/CMakeASMCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeASMInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU-ASM.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU.cmake"
+		},
+		{
+			"path" : "examples/DM_MC02_general/motor/CMakeLists.txt"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/CMakeFiles/3.24.2/CMakeASMCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeASMInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU-ASM.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU.cmake"
+		},
+		{
+			"path" : "examples/DM_MC02_general/uart/CMakeLists.txt"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-mingw_stm32/CMakeFiles/3.24.2/CMakeASMCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeASMInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU-ASM.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU.cmake"
+		}
+	],
+	"kind" : "cmakeFiles",
+	"paths" : 
+	{
+		"build" : "F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main/cmake-build-debug-mingw_stm32",
+		"source" : "F:/RM_UIC/DGStandard(2025)/UICRM-Embedded-DGStandard-main"
+	},
+	"version" : 
+	{
+		"major" : 1,
+		"minor" : 0
+	}
+}

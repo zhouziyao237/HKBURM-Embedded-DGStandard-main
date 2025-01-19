@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "examples/DM_MC02_general/can_bridge",
+		"source" : "examples/DM_MC02_general/can_bridge"
+	}
+}
